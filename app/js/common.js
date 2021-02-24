@@ -711,16 +711,21 @@ $(function () {
 
         var check = 1;
         var target = $('.num-plus'); // You counter class
-        var targetPos = target.offset().top;
-        var winHeight = $(window).height();
-        var scrollToElem = targetPos - winHeight;
+        if (!target.length) {
+
+        } else {
+            var targetPos = target.offset().top;
+            var winHeight = $(window).height();
+            var scrollToElem = targetPos - winHeight;
 
 
-        var winScrollTop = $(this).scrollTop();
-        if (winScrollTop > scrollToElem && check) {
-            $('.num-plus-list__item .value').countTo();
-            check = 0;
+            var winScrollTop = $(this).scrollTop();
+            if (winScrollTop > scrollToElem && check) {
+                $('.num-plus-list__item .value').countTo();
+                check = 0;
+            }
         }
+
     });
 
 });
