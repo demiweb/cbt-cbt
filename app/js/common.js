@@ -294,6 +294,8 @@ $(function () {
         const bannerSlider = new Swiper($(this), {
             // init: false,
             // loop: true,
+            autoHeight: true,
+            calculateHeight: true,
             slidesPerView: 'auto',
             spaceBetween: 30,
             centeredSlides: false,
@@ -310,10 +312,12 @@ $(function () {
 
             breakpoints: {
                 320: {
-                    spaceBetween: 10
+                    spaceBetween: 10,
+                    slidesPerView: 1,
                 },
                 700: {
                     spaceBetween: 10,
+                    slidesPerView: 'auto',
                 },
                 1300: {
                     spaceBetween: 20
@@ -740,6 +744,7 @@ jQuery(function ($) {
     });
     $('.top-product-list .produt-item').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
 });
+//hello
 
 let addToFav = [...document.querySelectorAll('.fav-compare .to-favorite')];
 let addToCompar = [...document.querySelectorAll(' .fav-compare .to-comparison')];
