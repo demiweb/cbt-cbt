@@ -3369,7 +3369,12 @@
 }
 
 //new styles
+@media screen and (max-width: 1460px) {
+  .team-member .image {
+    height: 320px;
+  }
 
+}
 @media screen and (max-width: 1200px) {
   .classic-block.classic-block--branch {
     .product-list.vertical {
@@ -3435,9 +3440,59 @@
       }
     }
   }
+  .download-info {
+    padding: 90px 0;
+  }
+  .commercial+.our-reviews {
+    margin-bottom: 160px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .our-team {
+    flex-wrap: wrap;
+  }
+  .simple-block {
+    padding-left: 24px;
+
+  }
+  .simple-block--reverse .block-img {
+    padding-right: 40px;
+  }
+  .simple-block .title-wrap {
+    padding-right: 40px;
+  }
+  .simple-block .title-wrap p {
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+  .simple-block .title-wrap h2.title-block {
+    margin-bottom: 60px;
+  }
+  .about-us__content--video .simple-block .block-img {
+    height: 440px;
+  }
+  .team-member {
+    width: calc(50% - 30px);
+    margin-right: 60px;
+    margin-bottom: 30px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  .simple-block {
+    margin-bottom: 90px;
+  }
+  .team-member h6 {
+    margin: 28px 0 12px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .team-member p {
+    font-size: 17px;
+    line-height: 20px;
+  }
   .our-reviews.cases-review {
     margin-top: 40px;
 
@@ -3603,6 +3658,32 @@
 }
 
 @media screen and (max-width: 768px) {
+  .simple-block .title-wrap {
+    width: 100%;
+    padding: 0 40px;
+    margin-bottom: 60px;
+  }
+  .certificates-prev {
+    flex-wrap: wrap;
+    padding: 50px 0 40px;
+  }
+  .certificates-prev .certificate {
+    width: calc(50% - 20px);
+    margin-right: 40px;
+    margin-bottom: 20px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  .simple-block .block-img {
+    width: 100%;
+    padding: 0 40px;
+    height: 417px;
+  }
+  .simple-block {
+    flex-direction: column;
+    padding-left: 0;
+  }
   .our-reviews.cases-review .swiper-container+.container p {
     font-size: 15px;
     line-height: 18px;
@@ -3674,6 +3755,9 @@
   .branch-page.top-slider .swiper-wrapper .img-bg::after {
     content: none;
   }
+  .about-us-page.top-slider .swiper-wrapper .img-bg::after {
+    content: none;
+  }
 
   .added-to-fav {
     width: 240px;
@@ -3733,7 +3817,7 @@
     max-width: 100%;
   }
 
-  .branch-page.top-slider {
+  .branch-page.top-slider, .about-us-page.top-slider {
     .swiper-wrapper {
       .container {
         .cart-slider-title {
@@ -3839,6 +3923,82 @@
 }
 
 @media screen and (max-width: 600px) {
+  .simple-block .title-wrap p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+  .simple-block .title-wrap h2.title-block {
+    margin-bottom: 48px;
+  }
+  .simple-block .title-wrap {
+    margin-bottom: 36px;
+    padding: 0 20px;
+  }
+  .simple-block .block-img {
+    padding: 0 20px;
+    height: 217px;
+  }
+  .simple-block .title-wrap h2.title-block {
+    br {
+      display: none;
+    }
+  }
+  .about-us__content--video .simple-block .title-wrap h2.title-block {
+    margin-bottom: 0;
+  }
+  .about-us__content--video .simple-block .block-img {
+    padding: 0 20px;
+    height: 185px;
+  }
+  .team-member h6 {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 19px 0 6px;
+  }
+  .team-member p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .team-member {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 38px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+    &:nth-child(4n-1) {
+      margin-bottom: 0;
+    }
+    &:nth-child(4n) {
+      margin-bottom: 0;
+    }
+  }
+  .download-info__container .btn {
+    padding: 5px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .download-info__container {
+    padding: 60px 10px;
+    width: 100%;
+  }
+  .download-info {
+    padding: 58px 0;
+  }
+  .certificates-prev .certificate {
+
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .download-info+.title-wrap {
+    margin-top: 0;
+  }
+  .team-member .image {
+    height: 178px;
+  }
   .get-portfolio {
     .portfolio-pagination {
       flex-direction: column;

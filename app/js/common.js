@@ -685,11 +685,65 @@ $(function () {
         var note = $('#note'),
             ts = new Date(2012, 0, 1),
             newYear = true;
+        let currentDay = new Date();
+        let currentDayObj = {
+            year: currentDay.getFullYear(),
+            month: currentDay.getMonth(),
+            day: currentDay.getDay(),
+            hours: currentDay.getHours(),
+            minutes: currentDay.getMinutes(),
+            seconds: currentDay.getSeconds(),
+            ms: currentDay.getMilliseconds(),
+        };
+        let shareEndDate = document.querySelector('.hidden-end-of-share');
+        function ifShareOnPage() {
+            if(!shareEndDate) {
+
+            } else {
+                let shareDateObj = {
+                    year: Number(shareEndDate.querySelector('.year').innerHTML),
+                    month: Number(shareEndDate.querySelector('.month').innerHTML),
+                    day: Number(shareEndDate.querySelector('.day').innerHTML),
+                    hours: Number(shareEndDate.querySelector('.hours').innerHTML),
+                }
+                let currentDayMs = (new Date()).getTime();
+                let crtDMs = 365 * currentDayObj.year *
+                console.log(currentDayMs + ' currentMs');
+                console.log(shareDateObj);
+                let shareDate = new Date(shareDateObj.year, shareDateObj.month-1, shareDateObj.day, shareDateObj.hours);
+                console.log(shareDate + ' test date');
+                let diff = shareDate - currentDayMs;
+                console.log(diff + ' differnce');
+                let oneS = 1000;
+                let secLeft = Math.floor((diff / oneS));
+                let hoursLeft = Math.floor((secLeft / 3600));
+                let minLeft = Math.floor((secLeft - (hoursLeft * 3600)) / 60);
+                let secLeft2 = Math.floor((secLeft - ((hoursLeft * 3600) + (minLeft * 60))));
+
+                let daysLeft = 0;
+                if (hoursLeft > 23) {
+                    daysLeft = Math.floor(hoursLeft / 24);
+                    hoursLeft = hoursLeft - (daysLeft * 24);
+                } else {
+
+                }
+
+                console.log('days left: ' + daysLeft);
+                console.log('hours left: ' + hoursLeft);
+                console.log('min left: ' + minLeft);
+                console.log('sec left: ' + secLeft2);
+
+            }
+        }
+        ifShareOnPage();
+        console.log(currentDay.getDay());
+        console.log(currentDayObj);
 
         if ((new Date()) > ts) {
             // Задаем точку отсчета для примера. Пусть будет очередной Новый год или дата через 10 дней.
             // Обратите внимание на *1000 в конце - время должно задаваться в миллисекундах
-            ts = (new Date()).getTime() + 2 * 24 * 60 * 60 * 1000;
+            ts = (new Date()).getTime() + 4 * 24 * 60 * 60 * 1000;
+            console.log(ts);
             newYear = false;
         }
 
@@ -735,15 +789,15 @@ $(function () {
 });
 
 
-jQuery(function ($) {
-    var max_col_height = 0; // максимальная высота, первоначально 0
-    $('.top-product-list .produt-item').each(function () { // цикл "для каждой из колонок"
-        if ($(this).height() > max_col_height) { // если высота колонки больше значения максимальной высоты,
-            max_col_height = $(this).height(); // то она сама становится новой максимальной высотой
-        }
-    });
-    $('.top-product-list .produt-item').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
-});
+// jQuery(function ($) {
+//     var max_col_height = 0; // максимальная высота, первоначально 0
+//     $('.top-product-list .produt-item').each(function () { // цикл "для каждой из колонок"
+//         if ($(this).height() > max_col_height) { // если высота колонки больше значения максимальной высоты,
+//             max_col_height = $(this).height(); // то она сама становится новой максимальной высотой
+//         }
+//     });
+//     $('.top-product-list .produt-item').height(max_col_height); // устанавливаем высоту каждой колонки равной значению максимальной высоты
+// });
 //hello
 
 let addToFav = [...document.querySelectorAll('.fav-compare .to-favorite')];
