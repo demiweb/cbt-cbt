@@ -3172,6 +3172,7 @@
 }
 
 @media (min-width: 1200px) {
+
   .top-product-list,
   .top-product.cart-page {
     .produt-item {
@@ -3382,11 +3383,24 @@
   .webinar__right {
     padding-left: 60px;
   }
-  .webinar__right .form-wrap>h5 {
+  .webinar__right .form-wrap > h5 {
     margin: 55px 0 0;
   }
 }
+
 @media screen and (max-width: 1460px) {
+  .carrier__cbt-advantages ol {
+    grid-column-gap: 12%;
+    grid-row-gap: 65px;
+  }
+  .carrier-text .carrier-text__block {
+    padding-right: 5%;
+
+    &:last-child {
+      padding-left: 5%;
+    }
+  }
+
   .team-member .image {
     height: 320px;
   }
@@ -3413,9 +3427,18 @@
 
 
 }
+
 @media screen and (max-width: 1200px) {
-  .webinar__right .form-wrap>h5 {
+  .webinar__right .form-wrap > h5 {
     margin-top: 25px;
+  }
+  .vacancy-right.webinar__right {
+    padding-left: 40px;
+  }
+  .title-block.title-block__attention {
+    br {
+      display: none;
+    }
   }
   .webinars__others a.webinar__left {
     width: calc((100% / 3) - 12px);
@@ -3425,7 +3448,7 @@
   .webinars__others a.webinar__left .video-cover {
     height: 300px;
   }
-  .webinar__left>h5 {
+  .webinar__left > h5 {
     margin: 22px 0 8px;
     font-size: 17px;
     line-height: 20px;
@@ -3436,7 +3459,7 @@
   .webinar-list {
     margin: 80px 0 0;
   }
-  .webinar__left>p {
+  .webinar__left > p {
     font-size: 17px;
     line-height: 20px;
   }
@@ -3507,10 +3530,11 @@
   .download-info {
     padding: 90px 0;
   }
-  .commercial+.our-reviews {
+  .commercial + .our-reviews {
     margin-bottom: 160px;
   }
 }
+
 @media screen and (max-width: 1120px) {
   .webinar-container {
     flex-direction: column;
@@ -3526,18 +3550,22 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 110px;
+
     > a {
       margin-bottom: 0;
     }
+
     ul {
       display: inline-flex;
       flex-direction: row;
       align-items: center;
       width: auto;
+
       li {
         margin-bottom: 0;
         margin-right: 40px;
         margin-left: 0;
+
         &:last-child {
           margin-right: 0;
         }
@@ -3547,6 +3575,177 @@
 }
 
 @media screen and (max-width: 992px) {
+  .classic-block--vacancy .webinar-links {
+    margin-bottom: 40px;
+  }
+  .vacancy-info {
+    flex-direction: column;
+  }
+  .vacancy-right.webinar__right {
+    display: none;
+    padding-left: 0;
+    margin: -40px 0 40px;
+    max-width: 600px;
+    .checkbox-wrap + .textFieldInput {
+      display: flex;
+      flex-direction: row;
+      .btn {
+        width: calc(50% - 15px);
+      }
+      button.btn + a.btn {
+        margin-top: 0;
+        margin-left: 30px;
+      }
+    }
+    .after-form {
+      width: 100%;
+      max-width: none;
+      .share {
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          display: inline-block;
+          margin-right: 40px;
+        }
+        ul {
+          display: inline-flex;
+        }
+      }
+    }
+  }
+  .vacancy-left {
+    width: 100%;
+    h2 {
+      font-size: 25px;
+      line-height: 29px;
+      margin-bottom: 29px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    > div:not(.vacancy-right) {
+      height: 351px;
+      margin: 30px 0 ;
+    }
+
+    .vacancy-right {
+      display: flex;
+
+
+    }
+  }
+  .vacancy-right.webinar__right input[type=file]+span {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 25px 0;
+  }
+  .after-form .share p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .vacancy-left h3, .vacancy-left h4 {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+  .vacancy-left > ul li {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .vacancy-left a.btn {
+    margin-top: 60px;
+  }
+  .vacancy-right .calcul-form .form-wrap button.btn {
+    color: $white;
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .carrier__cbt-advantages ol {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 7%;
+    grid-row-gap: 50px;
+
+    li h6 {
+      font-size: 25px;
+      line-height: 29px;
+    }
+
+    li p {
+      font-size: 17px;
+      line-height: 22px;
+    }
+  }
+  .advantages {
+    .title-wrap {
+      flex-direction: column;
+
+      .text {
+        width: 100%;
+        margin-top: 45px;
+
+        h6 {
+          font-size: 25px;
+          line-height: 29px;
+        }
+
+        p {
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .facancies__filter {
+    max-width: 420px;
+  }
+  .facancies__filter .btn {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+  .vacancies-list__single-vacancy {
+    width: 100%;
+    margin-right: 0;
+    min-height: 276px;
+  }
+  .courses .block {
+    align-items: center;
+  }
+  .courses .block .img {
+    height: 245px;
+  }
+  .vacancies-list__single-vacancy>h6 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .vacancies-list__single-vacancy p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .carrier-text {
+    flex-direction: column;
+
+    .carrier-text__block {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+
+      p {
+        font-size: 17px;
+        line-height: 19px;
+      }
+
+      &:last-child {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
   .webinar-container .webinar-list .closest-webinar .webinar__left .play-btn.js-videoPoster {
     margin-top: -116px;
   }
@@ -3596,7 +3795,7 @@
     width: 100%;
     padding-left: 0;
   }
-  .webinar__left>h5.h5-blue {
+  .webinar__left > h5.h5-blue {
     font-size: 17px;
     line-height: 20px;
   }
@@ -3613,7 +3812,7 @@
     width: 100%;
     max-width: 500px;
   }
-  .webinar__right .form-wrap>h5 {
+  .webinar__right .form-wrap > h5 {
     font-size: 25px;
     line-height: 29px;
     margin-top: 45px;
@@ -3622,9 +3821,11 @@
     width: calc(50% - 10px);
     margin-right: 20px;
     margin-bottom: 60px;
+
     &:nth-child(3n) {
       margin-right: 20px;
     }
+
     &:nth-child(even) {
       margin-right: 0;
     }
@@ -3685,6 +3886,7 @@
     width: calc(50% - 30px);
     margin-right: 60px;
     margin-bottom: 30px;
+
     &:nth-child(even) {
       margin-right: 0;
     }
@@ -3709,16 +3911,21 @@
       width: 100%;
       flex-direction: row;
       min-height: 0;
+
       .l-section {
         margin-bottom: 0;
       }
+
       .r-section {
         min-width: 62%;
+
         .detail {
           flex-direction: column;
+
           .name {
             margin-right: 30px;
           }
+
           .btn {
             align-self: flex-end;
           }
@@ -3794,7 +4001,7 @@
     }
   }
 
-  .classic-block.classic-block--portfolio .top-line,  .classic-block.classic-block--webinars .top-line{
+  .classic-block.classic-block--portfolio .top-line, .classic-block.classic-block--webinars .top-line {
     flex-wrap: wrap;
     justify-content: flex-start;
 
@@ -3869,6 +4076,19 @@
 }
 
 @media screen and (max-width: 768px) {
+  .facancies__filter .btn {
+    min-width: 98px;
+  }
+  .carrier__vacancies {
+    .title-wrap {
+      .title-block {
+        width: auto;
+      }
+    }
+  }
+  .advantages .title-block {
+    width: 100%;
+  }
   .simple-block .title-wrap {
     width: 100%;
     padding: 0 40px;
@@ -3882,6 +4102,7 @@
     width: calc(50% - 20px);
     margin-right: 40px;
     margin-bottom: 20px;
+
     &:nth-child(even) {
       margin-right: 0;
     }
@@ -3895,7 +4116,7 @@
     flex-direction: column;
     padding-left: 0;
   }
-  .our-reviews.cases-review .swiper-container+.container p {
+  .our-reviews.cases-review .swiper-container + .container p {
     font-size: 15px;
     line-height: 18px;
   }
@@ -4108,7 +4329,7 @@
   .calcul-form .form-wrap {
     padding-bottom: 0;
   }
-  .webinar__left>p {
+  .webinar__left > p {
     font-size: 15px;
     line-height: 18px;
   }
@@ -4144,12 +4365,137 @@
 }
 
 @media screen and (max-width: 600px) {
+  .vacancy-left h2 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 19px;
+  }
+  .vacancy-left p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .vacancy-left>div:not(.vacancy-right) {
+    height: 300px;
+  }
+  .vacancy-left h3, .vacancy-left h4 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 18px;
+  }
+  .vacancy-left>ul li {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .vacancy-left > a.btn {
+    width: 100%;
+  }
+  .vacancy-left {
+    margin-bottom: 60px;
+  }
+  .vacancy-right.webinar__right .checkbox-wrap+.textFieldInput {
+    flex-direction: column;
+    .btn {
+      width: 100%;
+    }
+    button.btn + a.btn {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+  .carrier-text .carrier-text__block p {
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+  .carrier__cbt-advantages ol {
+    grid-template-columns: 1fr;
+    grid-row-gap: 35px;
+  }
+  .carrier__cbt-advantages ol li h6 {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 0 7px 0;
+  }
+  .carrier__cbt-advantages ol li p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .advantages .title-wrap .text h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .advantages .title-wrap .text p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .carrier__vacancies {
+    .title-wrap {
+      width: 100%;
+      flex-direction: column;
+    }
+    .facancies__filter {
+      max-width: none;
+      width: 100%;
+      margin-top: 35px;
+      .btn {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        margin-bottom: 12px;
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .vacancies-list__single-vacancy {
+    padding: 60px 22px 32px;
+    min-height: 370px;
+  }
+  .vacancies-list__single-vacancy>h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .vacancies-list__single-vacancy p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .vacancies-list__single-vacancy .bottom-info {
+    flex-direction: column-reverse;
+  }
+  .vacancies-list__single-vacancy .bottom-info .share {
+    width: 100%;
+    justify-content: space-between;
+    max-width: none;
+    margin-bottom: 35px;
+  }
+  .vacancies-list__single-vacancy .bottom-info .share ul li {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+  }
+  .courses {
+    flex-direction: column;
+    .block {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 45px;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .courses .block .title-wrap {
+    padding-right: 0;
+  }
   .webinar-links {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 60px;
+
     > a {
-      margin-bottom:  50px;
+      margin-bottom: 50px;
 
     }
   }
@@ -4211,9 +4557,10 @@
     width: 100%;
     margin-right: 0;
     margin-bottom: 60px;
+
     &:nth-child(3n) {
-    margin-right: 0;
-  }
+      margin-right: 0;
+    }
   }
   .webinars__others a.webinar__left .video-cover .name {
     font-size: 13px;
@@ -4230,12 +4577,12 @@
     height: auto;
     min-height: 220px;
   }
-  .webinar__left>h5.h5-blue, .webinar__left>h5 {
+  .webinar__left > h5.h5-blue, .webinar__left > h5 {
     font-size: 15px;
     line-height: 18px;
     margin: 12px 0 8px;
   }
-  .webinar__right .form-wrap>h5 {
+  .webinar__right .form-wrap > h5 {
     font-size: 20px;
     line-height: 23px;
   }
@@ -4296,12 +4643,15 @@
     width: calc(50% - 10px);
     margin-right: 20px;
     margin-bottom: 38px;
+
     &:nth-child(even) {
       margin-right: 0;
     }
+
     &:nth-child(4n-1) {
       margin-bottom: 0;
     }
+
     &:nth-child(4n) {
       margin-bottom: 0;
     }
@@ -4325,7 +4675,7 @@
     margin-right: 20px;
     margin-bottom: 30px;
   }
-  .download-info+.title-wrap {
+  .download-info + .title-wrap {
     margin-top: 0;
   }
   .team-member .image {
@@ -4335,9 +4685,11 @@
     .portfolio-pagination {
       flex-direction: column;
       justify-content: flex-start;
+
       .btn {
         width: 100%;
         margin-bottom: 12px;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -4355,20 +4707,25 @@
       width: 100%;
       flex-direction: column;
       min-height: 0;
+
       .l-section {
         margin-bottom: 25px;
         width: 100%;
         height: 195px;
         min-height: 0;
       }
+
       .r-section {
         min-width: 62%;
         width: 100%;
+
         .detail {
           flex-direction: column;
+
           .name {
             margin-right: 30px;
           }
+
           .btn {
             align-self: flex-end;
           }
