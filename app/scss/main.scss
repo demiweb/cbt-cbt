@@ -4772,9 +4772,17 @@ img {
   }
 }
 
-.portfolio-case__case-info {
+.portfolio-case__case-info, .courses-case__case-info {
   width: 100%;
   padding: 60px 0 100px;
+}
+.vacancy-left {
+  > p + h3 {
+    margin-top: 20px;
+  }
+  > p + p {
+    margin-top: 20px;
+  }
 }
 
 .case__title {
@@ -4975,7 +4983,7 @@ img {
   }
 }
 
-.portfolio-case__case-info {
+.portfolio-case__case-info, .courses-case__case-info {
 
   h2.title-block {
     max-width: none;
@@ -6614,6 +6622,204 @@ img {
   }
 }
 
+.courses__filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 650px;
+  .btn {
+    width: auto;
+    min-width: 0;
+    font-weight: normal;
+    padding: 4px 10px;
+    margin-right: 25px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 21px;
+    height: 48px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active{
+      color: $white;
+      background: $accent;
+    }
+  }
+}
+
+.courses__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  > a.btn {
+    width: 280px;
+  }
+}
+
+.courses__list--date-divider {
+  width: 100%;
+  border-bottom: 1px solid #CECECD;
+  padding-bottom: 18px;
+  p {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: $black-text;
+    margin: 0;
+  }
+}
+.courses__month {
+  width: 100%;
+  margin: 35px 0 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.single-course {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  padding: 38px 30px 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.course-info {
+  min-width: 140px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  h6 {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    color: $black-text;
+    margin: 0 0 13px;
+  }
+  p {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey-text;
+    margin: 0 0 20px;
+    &.course-pay {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+
+      &--free {
+        color: #00C9A5;
+
+      }
+      &--paid {
+        color: $accent;
+      }
+      &--end {
+        color: #FF664E;
+      }
+    }
+  }
+}
+.course-theme {
+  padding: 0 10%;
+  box-sizing: border-box;
+  h5 {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: $black-text;
+    margin: 0 0 18px;
+  }
+  p {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 125%;
+    color: $grey-text;
+    margin: 0;
+  }
+}
+.course-speaker {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 300px;
+}
+.img-speaker {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.speaker-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  h6 {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: $black-text;
+    margin: 0 0 11px;
+  }
+   p {
+     font-family: $default-font;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 19px;
+     color: $grey-text;
+     margin: 0;
+   }
+  a.btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin: auto 0 0;
+    height: 48px;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+  }
+}
+.courses-case__case-info + .seo-text.product-detail-page {
+  margin-top: 0;
+}
 //new styles
 
 @import "media"; // Always at the end

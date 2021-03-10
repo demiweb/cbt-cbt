@@ -3389,6 +3389,9 @@
 }
 
 @media screen and (max-width: 1460px) {
+  .course-theme {
+    padding: 0 6%;
+  }
   .carrier__cbt-advantages ol {
     grid-column-gap: 12%;
     grid-row-gap: 65px;
@@ -3575,8 +3578,103 @@
 }
 
 @media screen and (max-width: 992px) {
+  .courses__filter {
+    flex-wrap: wrap;
+    max-width: 60%;
+    button.btn {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 18px;
+      padding: 4px;
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+  }
+  .courses__month {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .single-course {
+    padding: 26px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-right: 0;
+
+    }
+  }
+  .course-info {
+    width: 100%;
+    position: relative;
+    margin-bottom: 18px;
+    h6 {
+      margin-bottom: 27px;
+    }
+    p.course-pay {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    p:not(.course-pay) {
+      top: 50%;
+      right: 0;
+      position: absolute;
+      transform: translate(0, -50%);
+    }
+
+  }
+  .course-theme {
+    padding: 0;
+    margin-bottom: 45px;
+    h5 {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 35px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
   .classic-block--vacancy .webinar-links {
     margin-bottom: 40px;
+  }
+  .img-speaker {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+  .course-speaker {
+    width: 100%;
+    position: relative;
+  }
+  .speaker-info {
+
+    padding-bottom: 90px;
+    a.btn {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+    h6 {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .courses__list--date-divider p {
+    font-size: 17px;
+    line-height: 20px;
   }
   .vacancy-info {
     flex-direction: column;
@@ -4126,6 +4224,9 @@
   .portfolio-case__case-info h2.title-block {
     margin-bottom: 30px;
   }
+  .courses-case__case-info h2.title-block {
+    margin-bottom: 30px;
+  }
   .case__title {
     padding-top: 13px;
 
@@ -4365,10 +4466,53 @@
 }
 
 @media screen and (max-width: 600px) {
+  .courses-case__case-info {
+    .title-wrap {
+      flex-wrap: wrap;
+      .title-block {
+        width: 100%;
+      }
+      .courses__filter {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 45px;
+      }
+    }
+  }
+  .courses__list--date-divider p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .single-course {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   .vacancy-left h2 {
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 19px;
+  }
+  .course-info p:not(.course-pay) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .course-info {
+    margin-bottom: 15px;
+  }
+  .course-theme h5 {
+    margin-bottom: 20px;
+  }
+  .course-speaker {
+    min-width: 0;
+  }
+  .speaker-info {
+    a.btn {
+      min-width: 0;
+    }
   }
   .vacancy-left p {
     font-size: 15px;
