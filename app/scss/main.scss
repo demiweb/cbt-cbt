@@ -6820,6 +6820,186 @@ img {
 .courses-case__case-info + .seo-text.product-detail-page {
   margin-top: 0;
 }
+
+.related-courses {
+  .title-wrap {
+    h2.title-block {
+      width: auto;
+      max-width: none;
+      &::after {
+        left: auto;
+      }
+    }
+  }
+  .courses__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    .single-course:nth-child(2) {
+      margin-right: 0;
+    }
+    > a.btn {
+      margin-top: 60px;
+    }
+  }
+}
+.promotion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 80px;
+}
+.promotion__left, a.promotion__link {
+  width: 60%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    .img {
+      img {
+        transform: scale(1.15, 1.15);
+        transition: all 1.5s ease;
+      }
+    }
+    h4 {
+      text-decoration: underline;
+      color: $accent;
+    }
+  }
+  .img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1.5s ease;
+    }
+  }
+  p {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 125%;
+    color: $grey-text;
+    margin: 0 0 13px;
+    small {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  h4 {
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: $black-text;
+    margin-bottom: 20px;
+  }
+}
+.promotion__right {
+  width: 40%;
+  box-sizing: border-box;
+  padding-left: calc((75vw - 83%)/ 2);
+  .calcul-form {
+    .form-wrap {
+      background: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      h5 {
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: $accent;
+      }
+    }
+  }
+  .calcul-form .form-wrap .textFieldInput input[type=email], .calcul-form .form-wrap .textFieldInput input[type=text] {
+    width: 100%;
+  }
+}
+.classic-block--promotions {
+  background: url('../img/product/pattern.png') no-repeat right top;
+}
+.promotion-other {
+  width: 100%;
+  margin: 60px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .promotion__link {
+    width: calc(50% - 15px);
+    margin-right: 30px;
+    margin-bottom: 60px;
+    .img {
+
+    }
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+.promotion-container {
+  flex-grow: 1;
+  max-width: 900px;
+
+  .img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.classic-block--promotions {
+  + .calcul-form {
+    h2.title-block {
+      max-width: 60%;
+    }
+  }
+  .webinar-container {
+    //position: relative;
+    //.webinar-links {
+    //  position: absolute;
+    //  left: 0;
+    //  top: 0;
+    //}
+    .promotion-container {
+      margin: 0 auto;
+      width: 100%;
+      padding-right: 160px;
+      box-sizing: content-box;
+      p.date {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: $accent;
+      }
+      p:not(.date) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
 //new styles
 
 @import "media"; // Always at the end

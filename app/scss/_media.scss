@@ -3389,6 +3389,10 @@
 }
 
 @media screen and (max-width: 1460px) {
+  .classic-block--promotions .webinar-container .promotion-container {
+    padding-right: 0;
+    max-width: none;
+  }
   .course-theme {
     padding: 0 6%;
   }
@@ -3432,6 +3436,17 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+  .promotion__left, .promotion__right {
+    width: calc(50% - 20px);
+
+  }
+  .promotion__left {
+    margin-right: 40px;
+  }
+  .promotion__right {
+    padding-left: 0;
+  }
   .webinar__right .form-wrap > h5 {
     margin-top: 25px;
   }
@@ -3578,6 +3593,37 @@
 }
 
 @media screen and (max-width: 992px) {
+  .classic-block--promotions+.calcul-form h2.title-block {
+    max-width: none;
+  }
+  .classic-block--promotions+.calcul-form {
+    .form-wrap {
+      padding-top: 35px;
+    }
+  }
+  .promotion__left, a.promotion__link {
+    .img {
+      height: 235px;
+      margin-bottom: 13px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 125%;
+      margin-bottom: 13px;
+      small {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    h4 {
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 13px;
+    }
+  }
+  .promotion__right {
+    padding-left: 0;
+  }
   .courses__filter {
     flex-wrap: wrap;
     max-width: 60%;
@@ -4174,6 +4220,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .promotion__right .calcul-form .form-wrap h5 {
+    font-size: 20px;
+    line-height: 23px;
+  }
   .facancies__filter .btn {
     min-width: 98px;
   }
@@ -4434,9 +4484,37 @@
     font-size: 15px;
     line-height: 18px;
   }
+  .related-courses {
+    .course-speaker {
+min-width: 0;
+    }
+    .courses__list {
+      > a.btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .promotion {
+    flex-wrap: wrap;
+    .promotion__left {
+      width: 100%;
+      margin-bottom: 60px;
+      margin-right: 0;
+    }
+    .promotion__right {
+      width: 100%;
+      margin-bottom: 60px;
+      .calcul-form .form-wrap .btn {
+        color: $white;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
   .classic-block.classic-block--portfolio .top-line, .classic-block.classic-block--webinars .top-line {
 
     .portfolio__filter {
@@ -4466,6 +4544,40 @@
 }
 
 @media screen and (max-width: 600px) {
+  .promotion__left, a.promotion__link {
+    margin-bottom: 40px;
+    .img {
+      height: 170px;
+      margin-bottom: 12px;
+    }
+    p {
+      small {
+
+      }
+    }
+    h4 {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 12px;
+    }
+  }
+  .promotion-other {
+    margin-bottom: 0;
+    a.promotion__link {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .related-courses {
+    .course-speaker {
+      min-width: 0;
+    }
+    .courses__list {
+      > a.btn {
+        width: 100%;
+      }
+    }
+  }
   .courses-case__case-info {
     .title-wrap {
       flex-wrap: wrap;
