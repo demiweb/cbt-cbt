@@ -490,6 +490,20 @@ $(function () {
         //mousescrollstep: 5,
         scrollspeed: 50
     });
+    // $(".faq-text").niceScroll({
+    //     cursorcolor: "#3C8AC9",
+    //     cursorwidth: "5px",
+    //     background: "#E0E0E0",
+    //     cursorborder: "0px solid #f36d2d",
+    //     cursorborderradius: 0,
+    //     //boxzoom:false,
+    //     //touchbehavior:true,
+    //     //autohidemode:false,
+    //     cursorfixedheight: 100,
+    //     //smoothscroll: true,
+    //     //mousescrollstep: 5,
+    //     scrollspeed: 50
+    // });
 
 
     $(window).bind("resize", function () {
@@ -500,7 +514,13 @@ $(function () {
         }
     }).resize();
 
+    $(window).bind("resize", function () {
+        if ($(this).width() < 570) {
+            $(".faq-text").getNiceScroll().hide();
+        } else {
 
+        }
+    }).resize();
     //fav compare
     $('.fav-compare a').click(function (e) {
         e.preventDefault();
@@ -870,3 +890,24 @@ function ifProdOnPage() {
     }
 }
 ifProdOnPage();
+
+let allFaqs = [...document.querySelectorAll('.single-faq')];
+allFaqs.forEach((faq) => {
+    faq.querySelector('.faq-title').addEventListener('click', () => {
+        faq.classList.toggle('open');
+        $(faq).niceScroll({
+            cursorcolor: "#3C8AC9",
+            cursorwidth: "5px",
+            background: "#E0E0E0",
+            cursorborder: "0px solid #f36d2d",
+            cursorborderradius: 0,
+            //boxzoom:false,
+            //touchbehavior:true,
+            //autohidemode:false,
+            cursorfixedheight: 100,
+            //smoothscroll: true,
+            //mousescrollstep: 5,
+            scrollspeed: 50
+        });
+    })
+})
