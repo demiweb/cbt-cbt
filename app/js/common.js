@@ -475,6 +475,20 @@ $(function () {
         //mousescrollstep: 5,
         scrollspeed: 50
     });
+    $(".items-same-tags__right").niceScroll({
+        cursorcolor: "#3C8AC9",
+        cursorwidth: "5px",
+        background: "#E0E0E0",
+        cursorborder: "0px solid #f36d2d",
+        cursorborderradius: 0,
+        //boxzoom:false,
+        //touchbehavior:true,
+        //autohidemode:false,
+        cursorfixedheight: 0,
+        //smoothscroll: true,
+        //mousescrollstep: 5,
+        scrollspeed: 50
+    });
 
     $(".tabs-content .ov-content-tabs").niceScroll({
         cursorcolor: "#3C8AC9",
@@ -509,6 +523,13 @@ $(function () {
     $(window).bind("resize", function () {
         if ($(this).width() < 570) {
             $(".seo-text .container").getNiceScroll().hide();
+        } else {
+
+        }
+    }).resize();
+    $(window).bind("resize", function () {
+        if ($(this).width() < 570) {
+            $(".items-same-tags__right").getNiceScroll().hide();
         } else {
 
         }
@@ -707,9 +728,9 @@ $(function () {
         } else {
             let shareDateObj2 = {
                 year: shareEndDat.dataset.dateYear,
-                month:  shareEndDat.dataset.dateMonth - 1,
-                day:  shareEndDat.dataset.dateDay,
-                hours:  shareEndDat.dataset.dateHour,
+                month: shareEndDat.dataset.dateMonth - 1,
+                day: shareEndDat.dataset.dateDay,
+                hours: shareEndDat.dataset.dateHour,
             }
             var note = $('#note'),
                 ts = new Date(shareDateObj2.year, shareDateObj2.month, shareDateObj2.day),
@@ -729,22 +750,23 @@ $(function () {
 
         let shareEndDate = document.querySelector('.share-counter-cart');
         let tb = 0;
+
         function ifShareOnPage() {
-            if(!shareEndDate) {
+            if (!shareEndDate) {
 
             } else {
                 let shareDateObj = {
                     year: shareEndDate.dataset.dateYear,
-                    month:  shareEndDate.dataset.dateMonth - 1,
-                    day:  shareEndDate.dataset.dateDay,
-                    hours:  shareEndDate.dataset.dateHour,
+                    month: shareEndDate.dataset.dateMonth - 1,
+                    day: shareEndDate.dataset.dateDay,
+                    hours: shareEndDate.dataset.dateHour,
                 }
                 shareDateObj2 = shareDateObj;
                 let currentDayMs = (new Date()).getTime();
                 let crtDMs = 365 * currentDayObj.year *
-                console.log(currentDayMs + ' currentMs');
+                    console.log(currentDayMs + ' currentMs');
                 console.log(shareDateObj);
-                let shareDate = new Date(shareDateObj.year, shareDateObj.month-1, shareDateObj.day, shareDateObj.hours);
+                let shareDate = new Date(shareDateObj.year, shareDateObj.month - 1, shareDateObj.day, shareDateObj.hours);
                 console.log(shareDate + ' test date');
                 console.log(new Date());
                 let diff = shareDate - currentDayMs;
@@ -770,8 +792,9 @@ $(function () {
                 console.log('sec left: ' + secLeft2);
                 return tb
             }
-            return  tb
+            return tb
         }
+
         // ifShareOnPage();
         // console.log(currentDay.getDay());
         // console.log(currentDayObj);
@@ -795,7 +818,8 @@ $(function () {
                 message += "<span class=\"time\"><span class=\"title\">Години:</span> " + hours + "</span>";
                 message += "<span class=\"time\"><span class=\"title\">Хвилини:</span>" + minutes + " </span>";
                 message += "<span class=\"time\"><span class=\"title\">Секунди:</span> " + seconds + " </span>";
-                if (!shareEndDat) { } else {
+                if (!shareEndDat) {
+                } else {
                     note.html(message);
                 }
             }
@@ -855,7 +879,9 @@ function ifCanRemoveProd() {
         })
     }
 }
+
 ifCanRemoveProd();
+
 function ifProdOnPage() {
     if (!addToFav.length) {
 
@@ -889,6 +915,7 @@ function ifProdOnPage() {
         })
     }
 }
+
 ifProdOnPage();
 
 let allFaqs = [...document.querySelectorAll('.single-faq')];
@@ -910,4 +937,68 @@ allFaqs.forEach((faq) => {
             scrollspeed: 50
         });
     })
-})
+});
+
+let additiveTags = [...document.querySelectorAll('.additive-tag')];
+let additiveTagHidding = document.querySelector('.btn.control-visibility-tags');
+
+function ifBlogTags() {
+    if (!additiveTags.length) {
+
+    } else {
+        additiveTags.forEach((tag, i) => {
+            if (i > 5) {
+                tag.style.display = 'none';
+            }
+
+
+            tag.addEventListener('click', () => {
+                tag.classList.toggle('selected');
+
+            })
+        });
+        additiveTagHidding.addEventListener('click', () => {
+            additiveTagHidding.classList.toggle('hide');
+            let lang = document.querySelector('html').lang;
+            console.log(lang);
+            if (additiveTagHidding.classList.contains('hide')) {
+                additiveTags.forEach((tag2, k) => {
+
+                    if (k > 5) {
+                        tag2.style.display = 'flex';
+                    }
+                });
+                if (lang !== "en") {
+                    if (lang !== "ru") {
+                        additiveTagHidding.innerHTML = 'Приховати';
+                    } else {
+                        additiveTagHidding.innerHTML = 'Скрыть';
+                    }
+
+                } else {
+                    additiveTagHidding.innerHTML = 'Hide';
+                }
+            } else {
+
+                additiveTags.forEach((tag2, k) => {
+
+                    if (k > 5) {
+                        tag2.style.display = 'none';
+                    }
+                });
+                if (lang !== "en") {
+                    if (lang !== "ru") {
+                        additiveTagHidding.innerHTML = 'Більше тегів';
+                    } else {
+                        additiveTagHidding.innerHTML = 'Больше тегов';
+                    }
+
+                } else {
+                    additiveTagHidding.innerHTML = 'More tags';
+                }
+            }
+
+        });
+    }
+};
+ifBlogTags();
