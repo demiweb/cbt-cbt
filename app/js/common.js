@@ -475,20 +475,26 @@ $(function () {
         //mousescrollstep: 5,
         scrollspeed: 50
     });
-    $(".items-same-tags__right").niceScroll({
-        cursorcolor: "#3C8AC9",
-        cursorwidth: "5px",
-        background: "#E0E0E0",
-        cursorborder: "0px solid #f36d2d",
-        cursorborderradius: 0,
-        //boxzoom:false,
-        //touchbehavior:true,
-        //autohidemode:false,
-        cursorfixedheight: 0,
-        //smoothscroll: true,
-        //mousescrollstep: 5,
-        scrollspeed: 50
-    });
+    $(document).ready(()=> {
+        setTimeout(() => {
+            $(".items-same-tags__right").niceScroll({
+                cursorcolor: "#3C8AC9",
+                cursorwidth: "5px",
+                background: "#E0E0E0",
+                cursorborder: "0px solid #f36d2d",
+                cursorborderradius: 0,
+                //boxzoom:false,
+                //touchbehavior:true,
+                //autohidemode:false,
+                cursorfixedheight: 0,
+                //smoothscroll: true,
+                //mousescrollstep: 5,
+                scrollspeed: 50
+            });
+        }, 1000)
+
+    })
+
 
     $(".tabs-content .ov-content-tabs").niceScroll({
         cursorcolor: "#3C8AC9",
@@ -1002,3 +1008,34 @@ function ifBlogTags() {
     }
 };
 ifBlogTags();
+
+let showHideBtn = document.querySelector('.show-hide-pass');
+function ifShowHideOnPage() {
+    if(!showHideBtn) {
+
+    } else {
+        showHideBtn.addEventListener('click', () => {
+            showHideBtn.classList.toggle('show');
+            if (showHideBtn.classList.contains('show')) {
+                showHideBtn.closest('label').querySelector('input').type = 'text';
+            } else {
+                showHideBtn.closest('label').querySelector('input').type = 'password';
+
+            }
+        })
+    }
+}
+ifShowHideOnPage();
+let menuCabinetBtn = document.querySelector('.cabinet-menu');
+
+function ifCabinetPage() {
+    if(!menuCabinetBtn) {
+
+    } else {
+        menuCabinetBtn.addEventListener('click', () => {
+            menuCabinetBtn.classList.toggle('open');
+        })
+
+    }
+}
+ifCabinetPage();
