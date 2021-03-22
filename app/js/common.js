@@ -1081,3 +1081,18 @@ function ifOrdersHave() {
     }
 };
 ifOrdersHave();
+
+let calcDelCart = [...document.querySelectorAll('.calc-delivery')];
+
+function ifCartCalcDel() {
+    if(!calcDelCart.length) {
+
+    } else {
+        calcDelCart.forEach((dc) => {
+            dc.querySelector('span').addEventListener('click', () => {
+                dc.querySelector('span').classList.toggle('open');
+            })
+        })
+    }
+};
+ifCartCalcDel();
