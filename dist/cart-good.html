@@ -705,341 +705,103 @@
         <!-- end mob left menu -->
 
 
-        <section class="classic-block">
+        <section class="classic-block classic-block--account">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#"><img src="img/icon/home-run.svg" alt=""></a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Кошик</li>
+                        <li class="breadcrumb-item"><a href="#">Кошик</a></li>
+                        <li class="breadcrumb-item"><a href="#">Оформлення замовлення</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Замовлення прийнято</li>
                     </ol>
                 </nav>
-                <div class="cart__content">
-                    <div class="cart-table">
-                        <div class="cart-table__head">
-                            <div class="cart-table__empty"></div>
-                            <div class="cart-table__name">Товар</div>
-                            <div class="cart-table__price">Ціна</div>
-                            <div class="cart-table__amount">Кількість</div>
-                            <div class="cart-table__all">Всього</div>
+                <div class="account finish-order">
+                    <div class="order-checkout">
+                        <div class="account-order__left">
+                            <div class="top-line">
+                                <h2 class="title-block">Дякую. Ваше замовлення було прийнято</h2>
 
+                            </div>
+                            <div class="account-block">
+                                <span>Очікуйте дзвінка від менеджера
+для підтвердження замовлення.</span>
+                                <div class="order-checkout__address">
+                                    <div class="address-block">
+                                        <span>Платіжна адреса</span>
+                                        <p>Роман Романенко </p>
+                                        <p>Компанія Тест</p>
+                                        <p>вул. Шевченка, б. 34</p>
+                                        <p>Черкаси</p>
+                                        <p>Черкаський</p>
+                                        <p>18000</p>
+                                        <p>0669878987</p>
+                                        <p class="email">ertrt@gmail.com</p>
+                                    </div>
+                                    <div class="address-block">
+                                        <span>Адреса доставки</span>
+                                        <p>Роман Романенко </p>
+                                        <p>Компанія Тест</p>
+                                        <p>вул. Шевченка, б. 34</p>
+                                        <p>Черкаси</p>
+                                        <p>Черкаський</p>
+                                        <p>18000</p>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="cart-table__content">
-                            <div class="cart-table__item">
-                                <div class="cart-table__empty">
-                                    <button class="remove-from-cart"></button>
+                        <div class="account-order__right">
+                            <div class="order-checkout__info">
+                                <div class="order-checkout__head-line">
+                                    <span>Замовлення:</span>
+                                    <p>№12589</p>
                                 </div>
-                                <div class="cart-table__name">
-                                    <div>
-                                        <div class="img"><img src="./img/portfolio/bas-cart.png" alt=""></div>
-                                        <a href="#">BAS Управління автотранспортом Стандарт</a>
-                                    </div>
+                                <div class="order-checkout__line">
+                                    <span class="checkout__title">Дата:</span>
+                                    <p>12.05.2020</p>
                                 </div>
-                                <div class="cart-table__price"><span>45 000₴</span></div>
-                                <div class="cart-table__amount">
-                                    <div class="input-group plus-minus-input nav-slider">
-                                        <div class="input-group-button">
-                                            <button type="button"
-                                                    class="button hollow circle btn-slid btn-slider-nav-prev"
-                                                    data-quantity="minus" data-field="quantity-2">
-                                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.4241 5.30005L2.86366 9.71514M2.86366 9.71514L6.4241 14.1302M2.86366 9.71514L15.3252 9.71514"
-                                                          stroke="#667995" stroke-width="1.5"/>
-                                                </svg>
-                                            </button>
+                                <div class="order-checkout__line">
+                                    <span class="checkout__title">Email:</span>
+                                    <p>ertyuopdarwetulim@gmail.com</p>
+                                </div>
+                                <div class="checkout__product">
+                                    <span class="checkout__title">Товар:</span>
+                                    <div class="checkout__product__all">
+                                        <div class="checkout__single-product">
+                                            <a href="#">BAS Управління автотранспортом Стандарт</a>
+                                            <p>х1</p>
+                                            <span>45 000₴</span>
                                         </div>
-                                        <input class="input-group-field" type="text" name="quantity-2" value="1">
-                                        <div class="input-group-button">
-                                            <button type="button"
-                                                    class="button hollow circle btn-slid btn-slider-nav-next"
-                                                    data-quantity="plus" data-field="quantity-2">
-                                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.5759 13.7L15.1363 9.28486M15.1363 9.28486L11.5759 4.86976M15.1363 9.28486L2.6748 9.28486"
-                                                          stroke="#667995" stroke-width="1.5"/>
-                                                </svg>
-                                            </button>
+                                        <div class="checkout__single-product">
+                                            <a href="#">Комплект методичних матеріалів по використанню систем автоматизації бізнесу для освітнього процесу</a>
+                                            <p>х2</p>
+                                            <span>15 000₴</span>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="cart-table__all"><p>Всього:</p><span>45 000₴</span></div>
-                            </div>
-                            <div class="cart-table__item">
-                                <div class="cart-table__empty">
-                                    <button class="remove-from-cart"></button>
-                                </div>
-                                <div class="cart-table__name">
-                                    <div>
-                                        <div class="img"><img src="./img/portfolio/bas-cart.png" alt=""></div>
-                                        <a href="#">BAS Управління автотранспортом Стандарт</a>
-                                    </div>
-                                </div>
-                                <div class="cart-table__price"><span>45 000₴</span></div>
-                                <div class="cart-table__amount">
-                                    <div class="input-group plus-minus-input nav-slider">
-                                        <div class="input-group-button">
-                                            <button type="button"
-                                                    class="button hollow circle btn-slid btn-slider-nav-prev"
-                                                    data-quantity="minus" data-field="quantity-3">
-                                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.4241 5.30005L2.86366 9.71514M2.86366 9.71514L6.4241 14.1302M2.86366 9.71514L15.3252 9.71514"
-                                                          stroke="#667995" stroke-width="1.5"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <input class="input-group-field" type="text" name="quantity-3" value="1">
-                                        <div class="input-group-button">
-                                            <button type="button"
-                                                    class="button hollow circle btn-slid btn-slider-nav-next"
-                                                    data-quantity="plus" data-field="quantity-3">
-                                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                                     xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.5759 13.7L15.1363 9.28486M15.1363 9.28486L11.5759 4.86976M15.1363 9.28486L2.6748 9.28486"
-                                                          stroke="#667995" stroke-width="1.5"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-table__all"><p>Всього:</p><span>45 000₴</span></div>
-                            </div>
 
+                                    </div>
 
-                        </div>
-                        <div class="cart-table__footer">
-                            <div class="cart-coupon">
-                                <form action="">
-                                    <label for=""><input type="text" placeholder="Код купона"></label>
-                                    <button class="btn btn-blue">Застосувати купон</button>
-                                </form>
-                            </div>
-                            <div class="cart-table__footer-cart-total">
-                                <p>Загальна сума:</p><span>60 000₴</span>
+                                </div>
+                                <div class="order-checkout__line">
+                                    <span class="checkout__title">Загальна сума:</span>
+                                    <p>60 000₴</p>
+                                </div>
+                                <div class="order-checkout__line">
+                                    <span class="checkout__title">Доставка:</span>
+                                    <p>100₴</p>
+                                </div>
+                                <div class="order-checkout__line">
+                                    <span class="checkout__title">Метод оплати:</span>
+                                    <p>Прямий банківський переказ</p>
+                                </div>
+                                <div class="order-checkout__line">
+                                    <span class="checkout__title">Всього до сплати:</span>
+                                    <p><strong>60 100₴</strong></p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
-                </div>
-                <div class="cart-related">
-                    <div class="cart-related__left">
-                        <span>Вас може зацікавити.</span>
-                        <div class="product-list vertical">
-                            <div class="swiper-wrapper">
-                                <div class=" swiper-slide produt-item">
-                                    <div class="img">
-                                        <img src="img/product/1.png" alt="">
-
-                                    </div>
-                                    <div class="detail-wrap">
-                                        <a href="#" class="name">Бухгалтерія сільськогосподарського підприємства для
-                                            України</a>
-                                        <div class="detail">
-                                            <div class="row-detail">
-                                                <span class="name">Галузь</span>
-                                                <ul class="descript">
-                                                    <li>Роздрібна торгівля</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-detail">
-                                                <span class="name">Лінія продуктів</span>
-                                                <ul class="descript">
-                                                    <li>Продукти CBT</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-detail">
-                                                <span class="name">Призначення</span>
-                                                <ul class="descript">
-                                                    <li>Управління відносинами (CRM)</li>
-                                                    <li>Управління поставками та запасами</li>
-                                                    <li>Документообіг (ECM)</li>
-                                                    <li>Планування</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-detail">
-                                                <span class="name">Робочих місць </span>
-                                                <ul class="descript">
-                                                    <li>1-9, 10-50, 50-100, 100 і більше</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="price">
-                                        <div class="value">10 000</div>
-                                        <div class="value">18 000 ₴</div>
-                                    </div>
-                                    <div class="bottom-nav">
-                                        <a href="#" class="btn btn-blue">Відкрити</a>
-                                        <ul class="fav-compare">
-                                            <li>
-                                                <div class="added-to-fav">
-                                                    <p>Товар додано</p><a href="#">в обране</a>
-                                                </div>
-                                                <a href="#" class="to-favorite">
-                                                    <img src="img/icon/heart1.svg" alt="" class="not-active">
-                                                    <img src="img/icon/heart2.svg" alt="" class="active">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="added-to-fav">
-                                                    <p>Товар додано для</p><a href="#">порівняння</a>
-                                                </div>
-                                                <a href="#" class="to-comparison">
-                                                    <img src="img/icon/comparison1.svg" alt="" class="not-active">
-                                                    <img src="img/icon/comparison2.svg" alt="" class="active">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class=" swiper-slide produt-item">
-                                    <div class="img">
-                                        <div class="label">
-                                            <span class="label-blue ">Ми рекомендуємо</span>
-                                        </div>
-                                        <img src="img/product/3.png" alt="">
-                                    </div>
-                                    <div class="detail-wrap">
-                                        <a href="#" class="name">Магазин побутової техніки та засобів зв’язку</a>
-                                        <div class="detail">
-                                            <div class="row-detail">
-                                                <span class="name">Галузь</span>
-                                                <ul class="descript">
-                                                    <li>Роздрібна торгівля</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-detail">
-                                                <span class="name">Лінія продуктів</span>
-                                                <ul class="descript">
-                                                    <li>Продукти CBT</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-detail">
-                                                <span class="name">Призначення</span>
-                                                <ul class="descript">
-                                                    <li>Управління відносинами (CRM)</li>
-                                                    <li>Управління поставками та запасами</li>
-                                                    <li>Документообіг (ECM)</li>
-                                                    <li>Планування</li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-detail">
-                                                <span class="name">Робочих місць </span>
-                                                <ul class="descript">
-                                                    <li>1-9, 10-50, 50-100, 100 і більше</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="price">
-                                        <div class="value">45 000₴</div>
-                                    </div>
-                                    <div class="bottom-nav">
-                                        <a href="#" class="btn btn-blue">Відкрити</a>
-                                        <ul class="fav-compare">
-                                            <li>
-                                                <div class="added-to-fav">
-                                                    <p>Товар додано</p><a href="#">в обране</a>
-                                                </div>
-                                                <a href="#" class="to-favorite">
-                                                    <img src="img/icon/heart1.svg" alt="" class="not-active">
-                                                    <img src="img/icon/heart2.svg" alt="" class="active">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <div class="added-to-fav">
-                                                    <p>Товар додано для</p><a href="#">порівняння</a>
-                                                </div>
-                                                <a href="#" class="to-comparison">
-                                                    <img src="img/icon/comparison1.svg" alt="" class="not-active">
-                                                    <img src="img/icon/comparison2.svg" alt="" class="active">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="nav-slider">
-
-                            <!-- Add Arrows -->
-
-                            <div class="btn-slid btn-slider-nav-prev">
-                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.4241 5.30005L2.86366 9.71514M2.86366 9.71514L6.4241 14.1302M2.86366 9.71514L15.3252 9.71514"
-                                          stroke="#667995" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
-                            <div class="btn-slid btn-slider-nav-next">
-                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.5759 13.7L15.1363 9.28486M15.1363 9.28486L11.5759 4.86976M15.1363 9.28486L2.6748 9.28486"
-                                          stroke="#667995" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="cart-related__right">
-                        <div class="top-line">
-                            <h2 class="title-block">Сума замовлення</h2>
-                        </div>
-                        <div class="cart-order">
-                            <div class="cart-order__info">
-                                <div class="cart-info__delivery">
-                                    <span>Доставка:</span>
-                                    <ul>
-                                        <li><label for="delivery-type-1"><input checked type="radio"
-                                                                                id="delivery-type-1"
-                                                                                name="delivery-type"><span></span>Безкоштовна
-                                            доставка</label></li>
-                                        <li><label for="delivery-type-2"><input type="radio" id="delivery-type-2"
-                                                                                name="delivery-type"><span></span>Самовивіз</label>
-                                        </li>
-                                        <li><label for="delivery-type-3"><input type="radio" id="delivery-type-3"
-                                                                                name="delivery-type"><span></span>Єдина
-                                            ставка: 150.00₴</label></li>
-                                    </ul>
-                                    <p>Варіанти доставки будуть оновлені при оформленні замовлення.</p>
-                                </div>
-                                <div class="calc-delivery">
-                                    <span>Розрахувати вартість доставки</span>
-                                    <div class="form-edit">
-                                        <form action="">
-                                            <label for="">
-                                                <select>
-                                                    <option value="Послуга 1">Країна 1</option>
-                                                    <option value="Послуга 2">Країна 2</option>
-                                                    <option value="Послуга 3">Країна 3</option>
-                                                    <option value="Послуга 4">Країна 4</option>
-                                                    <option value="Послуга 5">Країна 5</option>
-                                                </select>
-                                            </label>
-                                            <label for="">
-                                                <input type="text" placeholder="Область/Район">
-                                            </label>
-                                            <label for="">
-                                                <input type="text" placeholder="Місто">
-                                            </label>
-                                            <label for="">
-                                                <input type="text" placeholder="Поштовий індекс">
-                                            </label>
-                                            <button class="btn btn-blue">Оновити</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="total-cost"><p>Всього:</p><span>60 000₴</span></div>
-
-                            </div>
-                            <button class="btn btn-orange-white">Оформити замовлення</button>
-
-                        </div>
-                    </div>
                 </div>
 
             </div>

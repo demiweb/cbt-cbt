@@ -326,7 +326,59 @@ $(function () {
         });
 
     });
+    $('.cart-related').each(function (index, element) {
+        // element == this
+        console.log(this.querySelector('.product-list'));
+        const arrowPrev = $(this).find('.btn-slider-nav-prev')
+        const arrowNext = $(this).find('.btn-slider-nav-next')
 
+        const bannerSlider = new Swiper($(this.querySelector('.product-list')), {
+            // init: false,
+            // loop: true,
+            autoHeight: false,
+            calculateHeight: false,
+            slidesPerView:  1,
+            spaceBetween: 0,
+            centeredSlides: false,
+            slidesPerGroup: 1,
+            noSwiping: true,
+            allowTouchMove: false,
+            allowSlidePrev: false,
+            allowSlideNext: false,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: arrowNext,
+                prevEl: arrowPrev,
+            },
+            // Responsive breakpoints
+
+            breakpoints: {
+                320: {
+                    spaceBetween: 20,
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    noSwiping: false,
+                    allowTouchMove: true,
+                    allowSlidePrev: true,
+                    allowSlideNext: true,
+                },
+                640: {
+                    spaceBetween: 20,
+                    noSwiping: true,
+                    allowTouchMove: false,
+                    allowSlidePrev: false,
+                    allowSlideNext: false,
+                },
+                1300: {
+                    spaceBetween: 0
+                },
+            }
+        });
+
+    });
     $('.js-portfolio').each(function (index, element) {
         // element == this
 
@@ -1096,3 +1148,34 @@ function ifCartCalcDel() {
     }
 };
 ifCartCalcDel();
+
+let openAuthorizBlock = [...document.querySelectorAll('.btn-open-block')];
+
+function ofOpenAuthorize() {
+    if (!openAuthorizBlock.length) {
+
+    } else {
+        openAuthorizBlock.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.closest('.checkout-details__authorization-checkout').querySelector('.authorization').classList.add('visible')
+                btn.classList.add('hide');
+            })
+        })
+    }
+};
+ofOpenAuthorize();
+
+let openOtherAddress = [...document.querySelectorAll('.top-line.open-address-edit')];
+
+function ifOpenOtherAddress() {
+    if (!openOtherAddress.length) {
+
+    } else {
+        openOtherAddress.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('open')
+            })
+        })
+    }
+};
+ifOpenOtherAddress();
