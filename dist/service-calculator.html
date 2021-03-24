@@ -705,41 +705,180 @@
         <!-- end mob left menu -->
 
 
-
         <section class="classic-block classic-block--account">
-            <div class="side-menu-cabinet">
-                <div class="cabinet-container">
-                    <div class="cabinet-menu">Меню особистого кабінету</div>
-                    <ul>
-                        <li><img src="./img/portfolio/speed-1.svg" alt=""><a href="#">Консоль</a></li>
-                        <li ><img src="./img/portfolio/supermarket-1.svg" alt=""><a href="#">Замовлення</a></li>
-                        <li class="active"><img src="./img/portfolio/carbon_document-download.svg" alt=""><a href="#">Загрузки</a></li>
-                        <li><img src="./img/portfolio/home-run-1.svg" alt=""><a href="#">Адреса</a></li>
-                        <li><img src="./img/portfolio/user-1.svg" alt=""><a href="#">Профіль</a></li>
-                        <li><img src="./img/portfolio/ion_exit-outline.svg" alt=""><a href="#">Вийти</a></li>
-                    </ul>
-                </div>
-
-
-            </div>
             <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#"><img src="img/icon/home-run.svg" alt=""></a></li>
-                        <li class="breadcrumb-item"><a href="#">Особистий кабінет</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Загрузки</li>
-                    </ol>
-                </nav>
-                <div class="account">
-                        <div class="top-line">
-                            <h2 class="title-block">Загрузки</h2>
-                        </div>
-                        <div class="account-block">
-                           <span><strong>Немає доступних загрузок.</strong></span>
-                            <a href="#" class="btn btn-white">Переглянути товари</a>
-                        </div>
+                <div class="service-calc">
+                    <div class="service-calc__left">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#"><img src="img/icon/home-run.svg" alt=""></a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="#">Послуги</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Вибір тарифу</li>
+                            </ol>
+                        </nav>
+                        <div class="service-calc__calc-service">
+                            <div class="calc-service__head">
+                                <span>CВТ <strong>start</strong></span>
+                                <p>Вкажіть кількість годин кожного спеціаліста.</p>
+                            </div>
 
+                            <div class="calc-service__content">
+                                <div class="calc-service__line">
+                                    <div class="calc-service__name">Консультант</div>
+                                    <div class="calc-service__price">750 грн/1 год</div>
+                                    <div class="calc-service__amount">
+                                        <div class="input-group plus-minus-input nav-slider">
+                                            <div class="input-group-button">
+                                                <button type="button"
+                                                        class="button hollow circle btn-slid btn-slider-nav-prev"
+                                                        data-quantity="minus" data-field="quantity-2">
+                                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.4241 5.30005L2.86366 9.71514M2.86366 9.71514L6.4241 14.1302M2.86366 9.71514L15.3252 9.71514"
+                                                              stroke="#667995" stroke-width="1.5"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <label for="">
+                                                <input class="input-group-field" type="text" name="quantity-2" value="1">
+
+                                            </label>
+                                            <div class="input-group-button">
+                                                <button type="button"
+                                                        class="button hollow circle btn-slid btn-slider-nav-next"
+                                                        data-quantity="plus" data-field="quantity-2">
+                                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11.5759 13.7L15.1363 9.28486M15.1363 9.28486L11.5759 4.86976M15.1363 9.28486L2.6748 9.28486"
+                                                              stroke="#667995" stroke-width="1.5"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="service-calc__right">
+                        <div class="service-calc__service-summary">
+                            <div class="service-summary__table">
+                                <div class="service-summary__head">
+                                    <div class="service-summary__name">
+                                        Всього:
+                                    </div>
+
+                                    <div class="service-summary__price">
+                                        грн
+                                    </div>
+                                    <div class="service-summary__amount">
+                                        годин
+                                    </div>
+
+                                </div>
+                                <div class="service-summary__content">
+                                    <div class="service-summary__line">
+                                        <div class="service-summary__name">
+                                            Консультант
+                                        </div>
+
+                                        <div class="service-summary__price">
+                                            750
+                                        </div>
+                                        <div class="service-summary__amount">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="service-summary__line">
+                                        <div class="service-summary__name">
+                                            Консультант
+                                        </div>
+
+                                        <div class="service-summary__price">
+                                            750
+                                        </div>
+                                        <div class="service-summary__amount">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="service-summary__line">
+                                        <div class="service-summary__name">
+                                            Ведучий консультант
+                                        </div>
+
+                                        <div class="service-summary__price">
+                                            750
+                                        </div>
+                                        <div class="service-summary__amount">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="service-summary__line">
+                                        <div class="service-summary__name">
+                                            Архітектор системи
+                                        </div>
+
+                                        <div class="service-summary__price">
+                                            750
+                                        </div>
+                                        <div class="service-summary__amount">
+                                            12
+                                        </div>
+                                    </div>
+                                    <div class="service-summary__line">
+                                        <div class="service-summary__name">
+                                            Ведучий консультант
+                                        </div>
+
+                                        <div class="service-summary__price">
+                                            750
+                                        </div>
+                                        <div class="service-summary__amount">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="service-summary__line">
+                                        <div class="service-summary__name">
+                                            Консультант
+                                        </div>
+
+                                        <div class="service-summary__price">
+                                            750
+                                        </div>
+                                        <div class="service-summary__amount">
+                                            1
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-summary__footer">
+                                    <div class="service-summary__summary-footer-total">
+                                        <div class="summary-footer-total__line">
+                                            <p>Всього годин:</p>
+                                            <span>5</span>
+                                        </div>
+                                        <div class="summary-footer-total__line">
+                                            <p>Загальна сума:</p>
+                                            <span>4 570 грн</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-summary__comment">
+                                        <label for="service-summary__comment">
+                                            <textarea id="service-summary__comment" placeholder="Коментар"></textarea>
+                                        </label>
+
+                                        <button class="btn btn-blue">Підтвердити</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
         </section>
@@ -772,7 +911,7 @@
                     </div>
                     <div class="textFieldInput checkbox-wrap">
                         <input type="checkbox" id="check-1" name="" class="custom-checkbox">
-                        <label for="check-1"><span>Ознайомлений з <a href="#" target="_blank" >Політикою ��онфіденційності</a></span></label>
+                        <label for="check-1"><span>Ознайомлений з <a href="#" target="_blank" >Політикою конфіденційності</a></span></label>
                     </div>
                     <div class="textFieldInput ">
                         <input type="checkbox" id="check-2" name="" class="custom-checkbox">
