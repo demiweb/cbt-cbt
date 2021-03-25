@@ -3797,6 +3797,80 @@
 }
 
 @media screen and (max-width: 992px) {
+  .blog-header.news-header {
+    flex-wrap: wrap;
+    .top-line {
+      width: 100%;
+    }
+    .blog-header__left {
+      width: 45%;
+    }
+    .blog-header__right {
+      margin-top: 40px;
+      max-width: none;
+      width: 55%;
+      padding-left: 10%;
+    }
+  }
+  .main-news.news-list__item {
+    .img {
+      height: 312px;
+    }
+    .date, .views-amount {
+      font-size: 13px;
+      line-height: 15px
+    }
+    .name {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  .service-calc {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 90px;
+  }
+  .service-calc__left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .calc-service__name {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .summary-footer-total__line  {
+    p {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .service-summary__comment button {
+    height: 48px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .service-summary__amount, .service-summary__name, .service-summary__price {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .calc-service__head {
+    margin-bottom: 50px;
+    p {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+  .service-calc__right {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 50px;
+  }
   .service-block__head {
     flex-direction: column;
     align-items: flex-start;
@@ -6194,6 +6268,35 @@
 }
 
 @media screen and (max-width: 640px) {
+  .blog-header.news-header {
+    flex-wrap: wrap;
+    .top-line {
+      width: 100%;
+    }
+    .blog-header__left {
+      width: 100%;
+    }
+    .blog-header__right {
+      margin-top: 50px;
+      max-width: none;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  .main-news.news-list__item {
+    .img {
+      height: 300px;
+    }
+    .date, .views-amount {
+      font-size: 15px;
+      line-height: 17px
+    }
+    .name {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
   .service-block__head h2.title-block br {
     display: inline;
   }
@@ -6470,8 +6573,48 @@
 }
 
 @media screen and (max-width: 600px) {
+  .help-service.calcul-form {
+    .form-wrap {
+      padding: 40px 0;
+
+    }
+  }
+  .calc-service__head  {
+    span {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  .calc-service__name {
+    font-size: 12px;
+    line-height: 15px;
+    width: 30%;
+  }
+
+  .calc-service__price {
+    font-size: 12px;
+    line-height: 14px;
+    width: 30%;
+  }
+  .calc-service__amount {
+    width: 40%;
+  }
+  .service-calc__service-summary {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    padding: 0;
+  }
   .breadcrumb li {
     margin-top: 6px;
+  }
+  .service-summary__amount, .service-summary__name, .service-summary__price {
+    font-size: 12px;
+    line-height: 14px;
   }
   .account.finish-order {
     .order-checkout__line {
@@ -6481,6 +6624,36 @@
         width: auto;
       }
     }
+  }
+  .summary-footer-total__line  {
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    span {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .service-calc {
+    margin-bottom: 45px;
+  }
+  .service-summary__comment {
+    margin-top: 30px;
+    label {
+      height: 160px;
+      textarea {
+        padding: 15px 0 0 14px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+  .service-summary__footer {
+    margin-top: 20px;
+  }
+  .service-summary__amount {
+    text-align: end;
   }
   .order-checkout__head-line {
     p {
