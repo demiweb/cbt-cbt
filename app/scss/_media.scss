@@ -1332,7 +1332,7 @@
   }
   h2.title-block {
     font-size: 40px;
-    line-height: 18px;
+    line-height: 40px;
   }
   .our-clients .container .client-list__item {
     width: 21%;
@@ -3553,6 +3553,13 @@
 
 
 }
+@media screen and (max-width: 1366px) {
+  .license__type p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .packs-list {
@@ -3811,6 +3818,160 @@
 }
 
 @media screen and (max-width: 1120px) {
+  .subscribe-pack-form {
+    max-width: 640px;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  .classic-block.classic-block--account {
+    background: none;
+  }
+  .subscribe-pack__footer p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .subscribe-pack__head span {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .custom-text-block {
+    flex-direction: column;
+  }
+  .custom-text-block__left p {
+    max-width: none;
+  }
+  .custom-text-block__left p, .download-block__right span, .comparison-block__content ul li {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .license__name, .license__type p, .license__type span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .price-license__footer .license__type p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .license-block__content ul li {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .license-block__head p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .license-block__head {
+    margin-bottom: 15px;
+  }
+  .courses {
+    flex-direction: column;
+    .block {
+      width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .img {
+      height: 380px;
+    }
+  }
+  .license-block__content {
+    flex-direction: column;
+    span {
+      margin-bottom: 15px;
+      margin-right: 0;
+      max-width: none;
+      width: auto;
+    }
+  }
+  .license-block>img {
+    margin: 15px 0;
+  }
+  .first-start__container {
+    flex-direction: column;
+  }
+  .first-start__left {
+    width: 100%;
+  }
+  .way-license__license {
+    margin-top: 20px;
+  }
+  .license__head {
+    flex-wrap: wrap;
+  }
+  .license__head .text-part {
+    width: 100%;
+    p {
+      margin-top: 20px;
+    }
+  }
+  .license__content {
+    margin-top: 60px;
+  }
+  .license-block {
+    padding: 30px 20px;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  .first-start__right {
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 0;
+  }
+  .comparison-block__content ul li {
+    margin-bottom: 8px;
+    padding-left: 36px;
+  }
+  .download-block__left div, .comparison-block__head {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .comparison-block__head {
+    padding-bottom: 25px;
+  }
+  .download-block__right span {
+    margin-bottom: 25px;
+  }
+  .comparison-prod__container {
+    flex-direction: column;
+  }
+  .comparison-prod__block {
+    padding: 30px 0;
+    width: 100%;
+    &:nth-child(2) {
+      &::before {
+        width: 40px;
+        height: 40px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+  .first-start .download-block {
+    margin-top: 60px;
+  }
+  .text-part>span {
+
+  }
+
+  .custom-text-block__left {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  .custom-text-block__right {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    transform: none;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
   .func-list {
     padding: 80px 0;
   }
@@ -7083,6 +7244,63 @@
 }
 
 @media screen and (max-width: 600px) {
+  .subscribe-pack__footer p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .subscribe-pack-form {
+    margin-bottom: 65px;
+  }
+  .custom-text-block__left p, .download-block__right span, .comparison-block__content ul li {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .custom-text-block__right {
+    padding: 0 20px;
+  }
+  .comparison-block__head, .download-block__left div {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .comparison-block__head {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .license__content {
+    flex-wrap: wrap;
+  }
+  .price-license {
+    margin-top: 40px;
+  }
+  .license-block {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding: 20px 13px;
+    &:last-child {
+      margin-bottom: 0;
+
+    }
+  }
+  .comparison-block__content {
+    padding: 20px;
+  }
+  .license__name, .license__type p, .license__type span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .price-license__footer .license__type p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .license-block__content ul li {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .license-block__head p {
+    font-size: 20px;
+    line-height: 25px;
+  }
   .comparison-prod {
     .top-line {
       p {
