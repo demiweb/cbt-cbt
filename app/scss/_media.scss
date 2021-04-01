@@ -3818,6 +3818,13 @@
 }
 
 @media screen and (max-width: 1120px) {
+  .product-detail-page .tabs-product .tabs-content .ov-content-tabs {
+    margin-bottom: 60px;
+  }
+  .first-steps ol li, .first-steps ul li {
+    margin-bottom: 30px;
+  }
+
   .custom-text-block {
     padding-top: 60px;
   }
@@ -3999,16 +4006,7 @@
   .func-list {
     padding: 80px 0;
   }
-  .first-steps.first-steps--trio  {
 
-    ul {
-      li {
-        width: calc(100% / 2);
-        padding-right: 6%;
-      }
-    }
-
-  }
   .first-start {
     .download-block {
       & ~ .first-steps {
@@ -4098,6 +4096,21 @@
     width: 100%;
     padding-right: 0;
     margin-bottom: 40px;
+  }
+  .first-steps.first-steps--trio  {
+
+    ul, ol {
+      li {
+        width: calc(100% / 2);
+        padding-right: 6%;
+      }
+    }
+    ol {
+      li {
+        padding-left: 20px !important;
+      }
+    }
+
   }
   .first-start + .calcul-form {
     .form-wrap {
@@ -6178,6 +6191,17 @@
       }
     }
   }
+  .text-info .custom-text-block__container>* {
+    width: 100%;
+  }
+  .case-info__container .case-info__right-side p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .custom-text-block__container p {
+    font-size: 17px;
+    line-height: 20px;
+  }
   .case-info__container {
     flex-direction: column;
 
@@ -6188,12 +6212,14 @@
 
     .case-info__right-side {
       max-width: none;
-      padding-left: 39px;
+      padding-left: 0;
       margin-left: 0;
       margin-top: 33px;
 
       ul {
         margin: 23px 0 0;
+        width: 50%;
+        padding-left: 40px;
 
         li {
           margin-bottom: 15px;
@@ -6741,9 +6767,30 @@
 }
 
 @media screen and (max-width: 640px) {
+  .first-steps ol li, .first-steps ul li {
+    margin-bottom: 20px;
+  }
+  .case-info__container .case-info__right-side ul {
+    width: 100%;
+  }
 
   .first-start .download-block~.first-steps ol li:nth-child(even) {
     padding-left: 0;
+  }
+  .first-steps.first-steps--trio  {
+
+    ul, ol {
+      li {
+        width: 100%;
+        padding-right: 6%;
+      }
+    }
+    ol {
+      li {
+        padding-left: 0 !important;
+      }
+    }
+
   }
   .func-list {
     background: none;

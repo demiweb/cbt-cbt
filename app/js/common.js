@@ -527,6 +527,20 @@ $(function () {
         //mousescrollstep: 5,
         scrollspeed: 50
     });
+    $(".text-apart.text-apart--scrolled").niceScroll({
+        cursorcolor: "#3C8AC9",
+        cursorwidth: "5px",
+        background: "#E0E0E0",
+        cursorborder: "0px solid #f36d2d",
+        cursorborderradius: 0,
+        //boxzoom:false,
+        //touchbehavior:true,
+        //autohidemode:false,
+        cursorfixedheight: 40,
+        //smoothscroll: true,
+        //mousescrollstep: 5,
+        scrollspeed: 50
+    });
     $(document).ready(()=> {
         setTimeout(() => {
             $(".items-same-tags__right").niceScroll({
@@ -1198,3 +1212,23 @@ function ifVideoPlayBtn() {
 }
 
 ifVideoPlayBtn();
+
+
+let ulListTextApart = [...document.querySelectorAll('.text-apart ul')];
+
+function removeUlLiContent ()
+{
+    if (!ulListTextApart.length) {
+
+    } else {
+        ulListTextApart.forEach((ul) => {
+            if (ul.closest('li')) {
+                ul.closest('li').classList.add('noBefore')
+            } else {
+
+            }
+        })
+    }
+};
+
+removeUlLiContent();
