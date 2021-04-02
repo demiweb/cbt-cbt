@@ -1232,3 +1232,33 @@ function removeUlLiContent ()
 };
 
 removeUlLiContent();
+
+let allMenuLicensesPrice = [...document.querySelectorAll('.price-license__block--mob .price-license__head')];
+function openLicensesPriceMenu() {
+    if (!allMenuLicensesPrice.length) {
+
+    } else {
+        allMenuLicensesPrice.forEach((li) => {
+          li.addEventListener('click', () => {
+              li.closest('.price-license__block--mob').classList.toggle('open');
+          })
+        })
+    }
+};
+openLicensesPriceMenu();
+
+let allTraderMenu = [...document.querySelectorAll('.full-block__line .full-block__head')];
+function openTraderMenu() {
+    if (!allTraderMenu.length) {
+
+    } else {
+        allTraderMenu.forEach((li) => {
+            li.addEventListener('click', () => {
+                li.closest('.full-block__line').classList.toggle('open');
+            })
+        })
+    }
+};
+openTraderMenu();
+
+
