@@ -1721,90 +1721,20 @@
                             <p><em>У «BAS Медицина. Поліклініка »та« BAS Медицина. Лікарня» підтримуються наступні DICOM
                                 функції:</em></p>
                         </div>
-                        <div class="table-block-erp">
-                            <div class="table-block-erp__head">
-                                <div class="table-block-erp__line">
-                                    <div class="table-block-erp__name">
-                                        DICOM служба
-                                    </div>
-                                    <div class="table-block-erp__text">
-                                        Назва DICOM функціоналу
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        На сервері «1С:Підприємство» (Windows 32/64 и Linux 32/64)
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        На клиєнті «1С:Підприємство» (Windows)
-                                    </div>
-                                </div>
+                        <table>
+                            <tbody>
+                            <tr><th>DICOM служба</th><th>Назва DICOM функціоналу</th><th>На сервері «1С:Підприємство» (Windows 32/64 и Linux 32/64)</th>
+                                <th>На клиєнті «1С:Підприємство» (Windows)</th></tr>
+                            <tr><td>Серверна частина</td></tr>
+                            <tr><td>Storage SCP</td><td>DICOM storage (C-STORE) SCP</td><td>+</td><td>+</td></tr>
+                            <tr><td>MWL SCP</td><td>DICOM Basic Worklist Management SCP</td><td>+</td><td>-</td></tr>
+                            <tr><td>MPPS SCP</td><td>DICOM Modality Performed Procedure Step SCP</td><td>+</td><td>+</td></tr>
+                            <tr><td>Клієнтська частина</td></tr>
+                            <tr><td>Query/Retrieve SCU</td><td>DICOM query (C-FIND) SCU</td><td>-</td><td>+</td></tr>
 
-                            </div>
-                            <div class="table-block-erp__content">
-                                <div class="table-block-erp__line table-block-erp__line--part">
-                                    Серверна частина
-                                </div>
-                                <div class="table-block-erp__line">
-                                    <div class="table-block-erp__name">
-                                        Storage SCP
-                                    </div>
-                                    <div class="table-block-erp__text">
-                                        DICOM storage (C-STORE) SCP
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        +
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        +
-                                    </div>
-                                </div>
-                                <div class="table-block-erp__line">
-                                    <div class="table-block-erp__name">
-                                        MWL SCP
-                                    </div>
-                                    <div class="table-block-erp__text">
-                                        DICOM Basic Worklist Management SCP
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        +
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        -
-                                    </div>
-                                </div>
-                                <div class="table-block-erp__line">
-                                    <div class="table-block-erp__name">
-                                        MPPS SCP
-                                    </div>
-                                    <div class="table-block-erp__text">
-                                        DICOM Modality Performed Procedure Step SCP
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        +
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        +
-                                    </div>
-                                </div>
-                                <div class="table-block-erp__line table-block-erp__line--part">
-                                    Клієнтська частина
-                                </div>
-                                <div class="table-block-erp__line">
-                                    <div class="table-block-erp__name">
-                                        Query/Retrieve SCU
-                                    </div>
-                                    <div class="table-block-erp__text">
-                                        DICOM query (C-FIND) SCU
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        -
-                                    </div>
-                                    <div class="table-block-erp__func">
-                                        +
-                                    </div>
-                                </div>
+                            </tbody>
 
-                            </div>
-                        </div>
+                        </table>
                         <span>Можливі варіанти використання</span>
                         <p><i>З одним або декількома PACS</i></p>
                         <div class="half-block half-block--grey">

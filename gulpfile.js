@@ -37,7 +37,7 @@ gulp.task('styles', async function() {
 });
 
 gulp.task('html', async function() {
-	gulp.src('app/*.html')
+	return gulp.src('app/*.html')
 		.pipe(rigger()) // Прогоним через rigger
 		.pipe(gulp.dest('dist/'))
 		.pipe(browsersync.stream())

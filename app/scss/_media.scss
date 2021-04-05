@@ -597,10 +597,13 @@
   }
   header.header {
     max-height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    & + .content {
+      padding-top: 80px;
+    }
   }
   .top-slider .swiper-slide .container .h1 {
     max-width: 74%;
@@ -2102,8 +2105,11 @@
       }
 
       .name {
-        margin-top: 0;
-        font-size: 12px;
+        span {
+          margin-top: 0;
+          font-size: 12px;
+        }
+
       }
     }
   }
@@ -2487,8 +2493,11 @@
       }
 
       .name {
-        margin-top: 0;
-        font-size: 12px;
+        span {
+          margin-top: 0;
+          font-size: 12px;
+        }
+
       }
     }
   }
@@ -4264,6 +4273,40 @@
 }
 
 @media screen and (max-width: 992px) {
+  .trade-price {
+    flex-wrap: wrap;
+  }
+  .trade-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .trade-card__left {
+    max-width: 304px;
+    span {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 17px;
+    }
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+  }
+  .trade-card__right {
+    max-width: 204px;
+    .btn {
+      width: 100%;
+    }
+  }
   .full-block__head {
     font-size: 18px;
     line-height: 20px;
@@ -4275,11 +4318,25 @@
     padding: 11px 13px;
     font-size: 14px;
   }
+  .text-apart ol:not(.decimal) {
+    margin-top: 25px;
+    li {
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
   .text-apart {
+    .half-block:nth-last-child(2) {
+      margin-bottom: 25px;
+    }
     a {
       font-size: 18px;
       line-height: 20px;
       margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    img {
+      //margin-top: 30px;
     }
     span {
       font-size: 20px;
@@ -5273,8 +5330,11 @@
 
       .speaker {
         .name {
-          font-size: 18px;
-          line-height: 21px;
+          span {
+            font-size: 18px;
+            line-height: 21px;
+          }
+
         }
       }
     }
@@ -6030,8 +6090,13 @@
     margin-bottom: 27px;
   }
   .webinars__others a.webinar__left .video-cover .speaker .name {
-    font-size: 17px;
-    line-height: 20px;
+    margin-top: 20px;
+    height: auto;
+    span {
+      font-size: 17px;
+      line-height: 20px;
+    }
+
   }
   .webinars__others a.webinar__left .video-cover {
     height: 230px;
@@ -6271,6 +6336,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  header.header {
+    & + .content {
+      padding-top: 43px;
+    }
+  }
   .func-list {
     padding: 50px 0;
   }
@@ -6802,6 +6872,54 @@
 }
 
 @media screen and (max-width: 640px) {
+  .trade-card {
+    padding: 40px 10px 19px;
+    flex-direction: column;
+
+  }
+  .trade-price {
+    margin: 35px 0;
+  }
+  .trade-card__left {
+    width: 100%;
+    max-width: none;
+    span {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 17px;
+      max-width: none;
+      br {
+        display: none;
+      }
+    }
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+  }
+  .trade-card__right {
+    width: 100%;
+    max-width: none;
+    p {
+      margin: 25px 0;
+      font-size: 30px;
+      line-height: 35px;
+      small {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+    .btn {
+      width: 100%;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
   .full-block__line {
     max-height: 56px;
   }
@@ -6906,7 +7024,7 @@
       align-items: flex-end;
     }
   }
-  .table-block-erp {
+  .table-block-erp, .text-apart table {
     margin-left: -15px;
     margin-right: -15px;
     width: calc(100% + 30px);
@@ -6916,9 +7034,16 @@
   .table-block-erp__line {
     font-size: 13px;
   }
-  .table-block-erp__name, .table-block-erp__text, .table-block-erp__func {
+  .table-block-erp__name, .table-block-erp__text, .table-block-erp__func, .text-apart td, .text-apart th {
     padding: 11px 13px;
     font-size: 10px;
+  }
+  .text-apart table tbody {
+    th:first-child, td:first-child {
+    }
+  }
+  .text-apart tr:not(:first-child) td, .text-apart tr:not(:first-child) th {
+    padding: 11px 13px;
   }
   .text-apart {
     a {
@@ -7110,8 +7235,13 @@
         }
 
         .name {
-          font-size: 12px;
-          line-height: 14px;
+          margin-top: 20px;
+          height: auto;
+          span {
+            font-size: 12px;
+            line-height: 14px;
+          }
+
         }
       }
 
@@ -8312,8 +8442,11 @@
         }
 
         .name {
-          font-size: 12px;
-          line-height: 14px;
+          span {
+            font-size: 12px;
+            line-height: 14px;
+          }
+
         }
       }
     }
@@ -8980,8 +9113,11 @@
     line-height: 15px;
   }
   .webinars__others a.webinar__left .video-cover .speaker .name {
-    font-size: 12px;
-    line-height: 14px;
+    span {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
   }
   .webinars__others a.webinar__left .video-cover {
     height: 220px;
@@ -9012,8 +9148,11 @@
     margin-bottom: 20px;
   }
   .webinar__left .video-cover .speaker .name {
-    font-size: 12px;
-    line-height: 14px;
+    span {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
   }
   .simple-block .title-wrap p {
     font-size: 15px;
