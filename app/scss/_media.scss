@@ -4273,6 +4273,11 @@
 }
 
 @media screen and (max-width: 992px) {
+  .seo-text {
+    .container {
+      overflow-y: scroll !important;
+    }
+  }
   .row-place {
     flex-wrap: wrap;
     & > * {
