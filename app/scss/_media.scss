@@ -6917,6 +6917,102 @@
 }
 
 @media screen and (max-width: 640px) {
+  .price-license__block-custom {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: scroll;
+
+    .price-license__head {
+      position: sticky;
+      top: -4px;
+      background: #f0f0f2;
+      padding-top: 0;
+
+      &::before, &:after {
+        content: none;
+      }
+    }
+
+    .price-license__content {
+      overflow: visible;
+    }
+
+    .price-license__line {
+      border-bottom: none;
+      padding: 0;
+    }
+
+    .license__name {
+      width: 50%;
+      flex-shrink: 0;
+      border-bottom: .5px solid #d1d1d1;
+      height: 100%;
+      padding: 10px 0;
+    }
+
+    .license__type {
+      width: 50%;
+      flex-shrink: 0;
+      border-bottom: .5px solid #d1d1d1;
+      height: 100%;
+      padding: 10px 0;
+    }
+  }
+  .price-license__tabs {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .tabs-content {
+      border-top: 0.5px solid $grey-text;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .tabs-nav {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      li {
+        width: 50%;
+        text-align: center;
+        padding: 4px;
+        margin-bottom: 6px;
+        box-sizing: border-box;
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $grey-text;
+        transition: color 0.3s ease, background-color 0.3s ease;
+        border-right: 0.5px solid $grey-text;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0);
+
+        &:nth-child(even) {
+          border-right: none;
+        }
+        &.active {
+          color: $black-text;
+          border-bottom: 0.5px solid $grey-text;
+
+
+        }
+
+      }
+    }
+  }
+
+  .price-license__line .license__name {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .trade-card {
     padding: 40px 10px 19px;
     flex-direction: column;

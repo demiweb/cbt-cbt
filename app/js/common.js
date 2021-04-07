@@ -184,6 +184,8 @@ $(function () {
 
     $(".js-tabs, .tabs-product").lightTabs();
 
+    $(".price-license__tabs").lightTabs();
+
 
     /*$('.num-plus .value ').countTo({
         delay: 2000,
