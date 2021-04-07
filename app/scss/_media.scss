@@ -9683,6 +9683,10 @@
 }
 
 @media screen and (max-width: 359px) {
+  .price-license__footer .license__type p {
+    font-size: 16px;
+    line-height: 18px;
+  }
   .price-license__mob-name {
     font-size: 13px;
   }
