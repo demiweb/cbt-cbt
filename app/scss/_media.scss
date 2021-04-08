@@ -6967,8 +6967,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     .tabs-content {
-      border-top: 0.5px solid $grey-text;
-      margin-top: 15px;
+      border-top: 0.5px solid #D1D1D1;
+      margin-top: 0;
       width: 100%;
     }
     .tabs-nav {
@@ -6979,28 +6979,28 @@
       padding: 0;
       margin: 0;
       li {
-        width: 50%;
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        margin-bottom: 10px;
+        height: 40px;
+        &:nth-child(even) {
+          margin-right: 0;
+        }
         text-align: center;
         padding: 4px;
-        margin-bottom: 6px;
         box-sizing: border-box;
         font-family: $default-font;
         font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: capitalize;
         color: $grey-text;
         transition: color 0.3s ease, background-color 0.3s ease;
-        border-right: 0.5px solid $grey-text;
-        border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-
-        &:nth-child(even) {
-          border-right: none;
-        }
         &.active {
-          color: $black-text;
-          border-bottom: 0.5px solid $grey-text;
+          color: $white;
+          border-bottom: 0.5px solid $accent;
+          background: $accent;
 
 
         }
@@ -7012,6 +7012,7 @@
   .price-license__line .license__name {
     font-size: 14px;
     line-height: 16px;
+    width: 50%;
   }
   .trade-card {
     padding: 40px 10px 19px;
@@ -7042,6 +7043,10 @@
         line-height: 17px;
       }
     }
+  }
+  .price-license__footer .license__type {
+    width: auto;
+    flex-grow: 1;
   }
   .trade-card__right {
     width: 100%;
@@ -7157,10 +7162,10 @@
   }
   .price-license__footer {
     .license__name {
-      width: 60%;
+      width: 50%;
     }
     .license__type {
-      width: 40%;
+      width: auto;
       justify-content: center;
       align-items: flex-end;
     }
