@@ -13870,5 +13870,118 @@ span.checkout__title {
   }
 }
 
+.footer .footer__select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 4px;
+  position: relative;
+  > span {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0 20px;
+    border-bottom: 1px solid #EEF5FA;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border: 1px solid #EEF5FA;
+      border-left: none;
+      border-bottom: none;
+      margin-right: 6px;
+      transform: rotate(135deg);
+      transition: transform 0.3s ease;
+    }
+  }
+  ul {
+    position: absolute;
+    border-radius: 0 0 3px 3px;
+    width: 100%;
+    top: 100%;
+    list-style: none;
+    padding: 6px 13px;
+    box-sizing: border-box;
+    background: $white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    li {
+      width: 100%;
+      input {
+        display: none;
+        &:checked + label span {
+          text-decoration: underline;
+          color: $accent;
+          &::before {
+            background: url("../img/portfolio/check-blue.svg") no-repeat center;
+
+          }
+        }
+      }
+      label {
+        width: 100%;
+        margin: 9px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+
+        span {
+          font-family: $default-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: $grey-text;
+          display: inline-flex;
+          align-items: center;
+          width: 100%;
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #667995;
+            box-sizing: border-box;
+            border-radius: 1px;
+            margin-right: 15px;
+
+          }
+        }
+
+      }
+    }
+  }
+  &.open {
+   > span {
+      background: $white;
+      color: $accent;
+      border-radius: 3px 3px 0 0;
+      box-sizing: border-box;
+      padding-left: 13px;
+      padding-top: 10px;
+      padding-bottom: 14px;
+      padding-right: 13px;
+      &::after {
+        transform: rotate(-45deg);
+        border-color: $accent;
+        transition: transform 0.3s ease;
+
+      }
+    }
+    ul {
+      display: flex;
+    }
+  }
+
+}
+
 //new styles
 @import "media"; // Always at the end
