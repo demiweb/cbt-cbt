@@ -13904,6 +13904,8 @@ span.checkout__title {
     border-radius: 0 0 3px 3px;
     width: 100%;
     top: 100%;
+    max-height: 154px;
+    overflow-y: scroll;
     list-style: none;
     padding: 6px 13px;
     box-sizing: border-box;
@@ -13912,6 +13914,9 @@ span.checkout__title {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     li {
       width: 100%;
       input {
