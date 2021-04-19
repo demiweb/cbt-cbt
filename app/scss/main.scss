@@ -88,7 +88,7 @@ html, body {
     .form-wrap {
       .textFieldInput {
         input[type=text],
-        input[type=email] {
+        input[type=email], textarea {
           background: transparent;
           border-bottom: 1px solid #001636;
           color: #001636;
@@ -97,6 +97,9 @@ html, body {
             color: #001636;
 
           }
+        }
+        textarea {
+          height: 69px;
         }
       }
     }
@@ -137,7 +140,7 @@ html, body {
 
     .textFieldInput {
       input[type=text],
-      input[type=email] {
+      input[type=email], textarea {
         background: transparent;
         border: 0;
         border-bottom: 1px solid #fff;
@@ -147,10 +150,19 @@ html, body {
         margin-bottom: 11px;
         width: 650px;
         color: #fff;
+        resize: none;
 
         &::placeholder {
           color: #fff;
 
+        }
+      }
+      textarea {
+        height: 69px;
+        overflow-y: hidden;
+
+        &::placeholder {
+          color: $white;
         }
       }
     }
@@ -263,7 +275,7 @@ html, body {
 
       .textFieldInput {
         input[type=text],
-        input[type=email] {
+        input[type=email], textarea {
           background: transparent;
           border: 0;
           border-bottom: 1px solid #fff;
@@ -492,7 +504,7 @@ h1, .h1 {
     line-height: 70px;
     color: $accent;
     position: relative;
-    left: -10px;
+    left: 0;
   }
 }
 
@@ -635,8 +647,8 @@ input {
 }
 
 .container-fluid {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .container {
@@ -2044,9 +2056,16 @@ header.header {
     padding-left: 0;
 
     &__item {
-      max-width: 365px;
+      max-width: 500px;
+      width: 33%;
+      box-sizing: border-box;
+      padding-right: 4%;
       list-style: none;
       position: relative;
+      margin-right: 0;
+      &:last-child {
+        padding-right: 0;
+      }
 
       &::before {
         content: "0" counter(heading) ". ";
@@ -3990,7 +4009,7 @@ ul {
 
     .textFieldInput {
       input[type=text],
-      input[type=email] {
+      input[type=email], textarea {
         background: transparent;
         border: 0;
         border-bottom: 1px solid $grey-text;
@@ -13986,6 +14005,10 @@ span.checkout__title {
     }
   }
 
+}
+
+.nicescroll-rails {
+  opacity: 1 !important;
 }
 
 //new styles
