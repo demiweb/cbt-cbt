@@ -2621,6 +2621,7 @@ ul {
 
 .catalog-page {
   margin-bottom: 180px;
+  background: url("../img/portfolio/patter-catalog.png") no-repeat top right;
 
   .container-fluid {
     display: flex;
@@ -2632,7 +2633,7 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 60px;
 
     .nav-slider {
       position: relative;
@@ -4642,7 +4643,7 @@ img {
 }
 
 .checkboxes-block {
-  margin: 15px 0;
+  margin: 15px 0 23px;
 }
 
 .textFieldInput.add-cli {
@@ -4770,6 +4771,9 @@ img {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .breadcrumb {
+      margin-bottom: 100px;
     }
   }
 }

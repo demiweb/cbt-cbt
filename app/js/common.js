@@ -319,10 +319,13 @@ $(function () {
                 },
                 700: {
                     spaceBetween: 10,
-                    slidesPerView: 'auto',
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
                 },
                 1300: {
-                    spaceBetween: 20
+                    spaceBetween: 20,
+                    slidesPerView: 'auto',
+                    slidesPerGroup: 1,
                 },
             }
         });
@@ -530,26 +533,26 @@ $(function () {
                 prevEl: arrowPrev,
             },
             // Responsive breakpoints
-            /*
+            // /*
               breakpoints: {
                   320: {
-                  slidesPerView: 2,
-                  spaceBetween: 10
+                  slidesPerView: 1,
+                  spaceBetween: 0
                   },
-                  480: {
-                      slidesPerView: 1,
-                      spaceBetween: 10
-                  },
+                  // 480: {
+                  //     slidesPerView: 1,
+                  //     spaceBetween: 10
+                  // },
                   640: {
                       slidesPerView: 2,
                       spaceBetween: 10
                   },
-                  1300: {
-                      slidesPerView: 'auto',
-                      spaceBetween: 20
-                  },
+                  // 1300: {
+                  //     slidesPerView: 'auto',
+                  //     spaceBetween: 20
+                  // },
               }
-              */
+              // */
         });
 
     });
