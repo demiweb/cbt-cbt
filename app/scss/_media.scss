@@ -1576,6 +1576,7 @@
       order: 3;
       width: 50%;
       flex-basis: auto;
+      margin-top: 0;
     }
   }
   .footer .footer-info .top-line .phone ul {
@@ -2295,9 +2296,7 @@
     right: 9px;
     top: 18px;
   }
-  .news-wrap .news-list {
-    flex-direction: column;
-  }
+
   .title-block {
     width: 100%;
   }
@@ -2747,6 +2746,9 @@
 
 // ≥576px
 @media screen and (max-width: 576px) {
+  .news-wrap .news-list {
+    flex-direction: column;
+  }
 
   .our-reviews .reviews__item {
     max-height: none;
@@ -7427,7 +7429,14 @@
       order: 3;
       width: 100%;
       flex-basis: auto;
+      margin-top: 70px;
     }
+  }
+  .footer .footer-info .top-line .btn {
+    height: 48px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
   }
   .footer .footer-info .top-line .phone ul {
     max-width: 100%;
