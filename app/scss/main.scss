@@ -822,6 +822,9 @@ header.header {
           margin-left: 200px;
           position: relative;
 
+
+
+
           .busket-hide {
             position: absolute;
             right: -65px;
@@ -889,12 +892,19 @@ header.header {
                 padding-top: 0;
                 padding-bottom: 0;
                 width: 100%;
+
+                height: 48px;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                color: $accent;
               }
             }
           }
 
           &.hover,
           &:hover {
+
             .busket-hide {
               opacity: 1;
               pointer-events: auto;
@@ -987,7 +997,6 @@ header.header {
         }
 
         .num-shares {
-          line-height: 1;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -997,6 +1006,7 @@ header.header {
           background: $accent;
           border-radius: 50%;
           font-size: 15px;
+          line-height: 12px;
           margin-left: 12px;
         }
 
@@ -4048,7 +4058,7 @@ ul {
     }
 
     .custom-checkbox + label {
-      margin-bottom: 22px;
+      margin-bottom: 28px;
       color: $grey-text;
 
       a {
@@ -4767,6 +4777,7 @@ img {
   }
 
   &.classic-block--webinars {
+    background: url("../img/news/short-patter-right.png") no-repeat top right;
     .top-line {
       display: flex;
       justify-content: space-between;
@@ -5862,7 +5873,7 @@ img {
     font-size: 22px;
     line-height: 26px;
     color: $black-text;
-    margin: 33px 0 13px;
+    margin: 33px 0 17px;
 
     &.h5-blue {
       color: $accent;
@@ -5877,8 +5888,9 @@ img {
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
-    color: $black-text;
+    color: #667995;
     margin: 0;
+    margin-top: 6px;
     transition: color 0.4s ease;
   }
 }
@@ -6055,18 +6067,25 @@ img {
     z-index: 1;
 
     .time-left {
-      width: 40%;
-      padding-left: 80px;
+      width: 100%;
+      padding-left: 0;
 
       .share-counter-cart {
         flex-direction: column;
+        border-top: none;
+        margin-bottom: 55px;
+        > .title {
+          width: 100%;
+          padding-bottom: 20px;
+          border-bottom: .5px solid #cececd;
+        }
       }
     }
 
     .closest-webinar {
       .webinar__left {
         width: 60%;
-        margin-top: -127px;
+        margin-top: 0;
 
         .play-btn.js-videoPoster {
           height: 554px;
@@ -6093,6 +6112,10 @@ img {
       .webinar__right {
         width: 40%;
         padding-left: 80px;
+        justify-content: flex-start;
+        .form-wrap > h5 {
+          margin-top: 0;
+        }
       }
     }
   }

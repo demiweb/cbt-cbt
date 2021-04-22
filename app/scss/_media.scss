@@ -6844,6 +6844,30 @@
   .product-list.js-top-product .produt-item {
     max-width: 48.5%;
   }
+  .webinar-container .webinar-list .closest-webinar .webinar__right {
+    width: 100%;
+    max-width: none;
+    .calcul-form {
+      max-width: 472px;
+      .form-wrap {
+        padding-top: 0;
+      }
+    }
+  }
+  .webinar__left {
+    > p {
+      color: #667995;
+    }
+  }
+  .webinar-container .webinar-list .time-left .share-counter-cart {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    border-top: .5px solid #cececd;
+    & >.title {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -7605,9 +7629,54 @@
 }
 
 @media screen and (max-width: 640px) {
-  .classic-block.classic-block--webinars .breadcrumb {
-    margin-bottom: 60px;
+  .video-review .container .l-section .descript {
+    font-size: 15px;
   }
+  .video-review .js-reviews-video .video__item .video-cover .speaker .photo {
+    width: 33px;
+    height: 33px;
+    margin-right: 15px;
+  }
+  .video-review .js-reviews-video .video__item .video-cover {
+    padding: 12px 0 0 12px;
+  }
+  .top-product-info .r-section .price {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .classic-block.classic-block--webinars {
+    background: none;
+    padding-top: 20px;
+  }
+  .classic-block.classic-block--webinars .breadcrumb {
+    margin-bottom: 50px;
+  }
+  .time-left .share-counter-cart {
+    border-top: none;
+    margin-top: 35px;
+    & > .title {
+      width: 100%;
+    padding-bottom: 20px;
+    border-bottom: .5px solid #cececd;
+  }}
+  .webinar-container .webinar-list .time-left .share-counter-cart {
+    border-top: none;
+    margin-top: 35px;
+    .share-counter-num {
+      width: 100%;
+      #note {
+        justify-content: space-between;
+        .time {
+          margin-right: 0;
+        }
+      }
+     }
+    &> .title {
+      padding-bottom: 20px;
+      border-bottom: .5px solid #cececd;
+    }
+  }
+
   .download-info__container .btn {
     width: 100%;
   }
