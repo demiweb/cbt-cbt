@@ -3735,7 +3735,13 @@
     height: 430px;
   }
   .webinar-container .webinar-list .time-left {
-    padding-left: 45px;
+    padding-left: 0;
+  }
+  .calcul-form .form-wrap .btn {
+    height: 48px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
   }
   .webinar-container .webinar-list .closest-webinar .webinar__right {
     padding-left: 45px;
