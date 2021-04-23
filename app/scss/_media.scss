@@ -3751,7 +3751,7 @@
 
 @media screen and (max-width: 1200px) {
   header.header {
-    background: #f0f0f2;
+    background: #f0f0f2 !important;
   }
   .video-review .js-reviews-video {
     padding-left: 0;
@@ -10682,7 +10682,8 @@
     margin-top: 35px;
   }
   header.header {
-    background: #fff;
+    background: #fff !important;
+    border-bottom: 0.3px solid #667995;
   }
   .our-reviews .nav-slider {
     margin-top: 44px;
