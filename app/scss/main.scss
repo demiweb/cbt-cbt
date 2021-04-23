@@ -13230,7 +13230,10 @@ span.checkout__title {
       padding-left: 26px;
       box-sizing: border-box;
       margin-bottom: 16px;
-
+      li {
+        color: #667995;
+        font-weight: 300;
+      }
       &.noBefore {
         li {
           &::before {
@@ -14057,5 +14060,15 @@ span.checkout__title {
 
 }
 
+
+.first-start {
+  .container {
+    .download-block {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
 //new styles
 @import "media"; // Always at the end
