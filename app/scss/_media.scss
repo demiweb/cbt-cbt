@@ -7840,6 +7840,12 @@
     width: 100%;
     box-sizing: content-box;
   }
+  .product-list.horisontal .produt-item .name, .product-list.vertical .produt-item .name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    min-height: 0;
+  }
   .catalog-page .product-wrap .top-line .sort-view-wrap .sort-wrap {
     width: calc(50% - 10px);
     min-width: 0;
