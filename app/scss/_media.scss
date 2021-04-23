@@ -6858,8 +6858,10 @@
   .webinar-container .webinar-list .closest-webinar .webinar__right {
     width: 100%;
     max-width: none;
+
     .calcul-form {
       max-width: 472px;
+
       .form-wrap {
         padding-top: 0;
       }
@@ -6874,7 +6876,8 @@
     margin-top: 55px;
     margin-bottom: 50px;
     border-top: .5px solid #cececd;
-    & >.title {
+
+    & > .title {
       padding-bottom: 0;
       border-bottom: none;
     }
@@ -7665,24 +7668,30 @@
   .time-left .share-counter-cart {
     border-top: none;
     margin-top: 35px;
+
     & > .title {
       width: 100%;
-    padding-bottom: 20px;
-    border-bottom: .5px solid #cececd;
-  }}
+      padding-bottom: 20px;
+      border-bottom: .5px solid #cececd;
+    }
+  }
   .webinar-container .webinar-list .time-left .share-counter-cart {
     border-top: none;
     margin-top: 35px;
+
     .share-counter-num {
       width: 100%;
+
       #note {
         justify-content: space-between;
+
         .time {
           margin-right: 0;
         }
       }
-     }
-    &> .title {
+    }
+
+    & > .title {
       padding-bottom: 20px;
       border-bottom: .5px solid #cececd;
     }
@@ -7691,7 +7700,7 @@
   .download-info__container .btn {
     width: 100%;
   }
-  .certificates-prev+.btn {
+  .certificates-prev + .btn {
     width: 100%;
     height: 48px;
     font-weight: 500;
@@ -7701,12 +7710,20 @@
   .num-plus {
     background: none;
     padding: 80px 0 100px;
+
     .text {
       text-align: left;
       font-weight: 300;
       font-size: 15px;
       line-height: 18px;
     }
+  }
+  .our-clients {
+    margin-bottom: 65px;
+  }
+  .num-wrap {
+    background: url("../img/news/pat-left-numbers.png") no-repeat center left;
+
   }
   .about-us__content--video .simple-block .block-img {
     margin-top: 60px;
@@ -7719,7 +7736,7 @@
     background: none;
   }
 
-  .our-team+.btn {
+  .our-team + .btn {
     width: 100%;
     height: 48px;
     font-weight: 500;
@@ -7731,6 +7748,7 @@
     margin-bottom: 45px;
     padding-left: 63px;
     box-sizing: border-box;
+
     .num {
       font-weight: bold;
       font-size: 50px;
@@ -10638,6 +10656,9 @@
 }
 
 @media screen and (max-width: 575px) {
+  .about-result {
+    background: none;
+  }
   .our-reviews .reviews__item .r-section .detail .btn {
     align-self: flex-start;
     margin-top: 35px;
