@@ -5745,7 +5745,7 @@
   .title-paper {
     margin-bottom: 40px;
 
-    h2 {
+    h1 {
       font-size: 25px;
       line-height: 29px;
     }
@@ -7566,7 +7566,7 @@
   .title-paper {
     margin-bottom: 40px;
 
-    h2 {
+    h1 {
       font-size: 25px;
       line-height: 29px;
     }
@@ -7662,6 +7662,16 @@
 @media screen and (max-width: 640px) {
   .classic-block--promotions {
     background: none;
+  }
+  .classic-block.classic-block--search-result {
+    padding-top: 30px;
+    .breadcrumb {
+      margin-bottom: 60px;
+    }
+  }
+  .single-paper .text a.btn {
+    font-size: 17px;
+    line-height: 20px;
   }
   .classic-block.classic-block--search-result {
     background: none;
