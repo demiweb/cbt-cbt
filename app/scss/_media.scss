@@ -2763,7 +2763,16 @@
     max-width: 100%;
   }
   .title-block {
-    font-size: 27px;
+    font-size: 30px;
+  }
+  .video-wrapper .play-btn {
+    opacity: 1;
+    &::before {
+      width: 45px;
+      height: 45px;
+      background-size: contain !important;
+      border: none !important;
+    }
   }
   .our-reviews .nav-slider {
     margin-top: 245px;
