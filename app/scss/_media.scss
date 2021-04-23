@@ -7578,6 +7578,33 @@
     background: url("../img/news/pat-car-right.png") no-repeat;
     background-position: right 150px;
   }
+  .vacancy-right.webinar__right {
+    .calcul-form {
+      width: 100%;
+    }
+  }
+  .vacancy-right.webinar__right .checkbox-wrap+.textFieldInput {
+    flex-wrap: wrap;
+  }
+  .vacancy-right.webinar__right .checkbox-wrap+.textFieldInput button.btn+a.btn {
+    margin-left: 0;
+  }
+  .vacancy-left>a.btn {
+    width: 100%;
+    height: 48px;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 50px;
+  }
+  .vacancy-right.webinar__right .checkbox-wrap+.textFieldInput .btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+    margin-left: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   .paper-left {
     margin-bottom: 60px;
     width: 100%;
