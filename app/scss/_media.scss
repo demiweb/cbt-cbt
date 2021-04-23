@@ -7589,6 +7589,9 @@
   .promotion {
     margin-top: 36px;
   }
+  .classic-block--promotions+.calcul-form .form-wrap {
+    padding-top: 0;
+  }
   .promotion-other {
     margin-top: 0;
   }
@@ -10125,7 +10128,7 @@
   }
 
   section.map-page {
-    height: 200vh;
+    height: 200vh !important;
 
     section.contacts {
       margin-top: 0;
