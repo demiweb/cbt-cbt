@@ -12119,7 +12119,7 @@ span.checkout__title {
   width: 100%;
   margin-top: 80px;
 
-  ol, ul {
+  > ol, ul {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -12133,6 +12133,7 @@ span.checkout__title {
 
     li {
       width: 50%;
+
 
       &::before {
         content: "0" counter(list) ". ";
@@ -12152,7 +12153,7 @@ span.checkout__title {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin-bottom: 100px;
+      margin-bottom: 50px !important;
 
       span {
         font-family: $default-font;
@@ -12161,6 +12162,7 @@ span.checkout__title {
         font-size: 35px;
         line-height: 41px;
         color: $accent;
+        margin-top: 0;
       }
 
       p {
