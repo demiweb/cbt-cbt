@@ -7660,6 +7660,12 @@
 }
 
 @media screen and (max-width: 640px) {
+  .classic-block--promotions {
+    background: none;
+  }
+  .classic-block.classic-block--search-result {
+    background: none;
+  }
   .video-review .container .l-section .descript {
     font-size: 15px;
   }
@@ -10683,10 +10689,7 @@
           height: 160px;
         }
 
-        .name {
-          font-size: 13px;
-          line-height: 15px;
-        }
+
       }
     }
   }
