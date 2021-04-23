@@ -4175,6 +4175,9 @@
 }
 
 @media screen and (max-width: 1120px) {
+  .text-apart {
+    align-items: flex-start;
+  }
   .product-detail-page .tabs-product .tabs-content .ov-content-tabs {
     margin-bottom: 60px;
   }
