@@ -11346,6 +11346,9 @@ span.checkout__title {
   justify-content: flex-start;
   padding: 18px 0;
   border-top: 0.5px solid #CECECD;
+  &:last-child {
+    border-bottom: 0.5px solid #CECECD;
+  }
 }
 
 .service-summary__footer {
@@ -11492,9 +11495,6 @@ span.checkout__title {
   align-items: center;
   justify-content: flex-start;
 
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 .calc-service__name {
