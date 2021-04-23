@@ -2732,7 +2732,7 @@
     background: rgba(102, 121, 149, 0.7);
   }
   .play-btn.videoPoster:after {
-    transform: translate(-58%, -78%);
+    transform: translate(-38%, -50%);
     border-left: 19px solid #fff;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
@@ -5418,6 +5418,10 @@
   }
   .breadcrumb {
     flex-wrap: wrap;
+    a, li {
+      font-size: 14px;
+
+    }
   }
   .address-block {
     span {
@@ -7716,6 +7720,27 @@
 }
 
 @media screen and (max-width: 640px) {
+  .download-block__left p, .first-steps ol li p, .first-steps ul li p, .text-part p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .row-place .first-steps ol li {
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  .video-preview .video-cover {
+    padding: 12px 0 12px 12px;
+  }
+  .text-apart>img {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .half-block>div.top-line {
+    margin-top: 0;
+  }
   .classic-block--promotions {
     background: none;
   }
