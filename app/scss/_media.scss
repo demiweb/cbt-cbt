@@ -7718,6 +7718,17 @@
       line-height: 18px;
     }
   }
+  .catalog-page {
+    background: none;
+  }
+  .catalog-page .catalog-bottom-line {
+    .btn {
+      height: 48px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
   .our-clients {
     margin-bottom: 65px;
   }
@@ -7827,6 +7838,7 @@
   .catalog-page .product-wrap .top-line .sort-view-wrap .sort-wrap .nice-select .hide-block, .catalog-page .product-wrap .top-line .sort-view-wrap .sort-wrap .nice-select .list, .catalog-page .product-wrap .top-line .sort-view-wrap .sort-wrap .sort-type .hide-block, .catalog-page .product-wrap .top-line .sort-view-wrap .sort-wrap .sort-type .list {
     min-width: 0;
     width: 100%;
+    box-sizing: content-box;
   }
   .catalog-page .product-wrap .top-line .sort-view-wrap .sort-wrap {
     width: calc(50% - 10px);
