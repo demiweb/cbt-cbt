@@ -2746,6 +2746,7 @@
 
 // ≥576px
 @media screen and (max-width: 576px) {
+
   .news-wrap .news-list {
     flex-direction: column;
   }
@@ -3749,6 +3750,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  header.header {
+    background: #f0f0f2;
+  }
   .video-review .js-reviews-video {
     padding-left: 0;
 
@@ -6832,7 +6836,7 @@
 
       ul {
         margin: 23px 0 0;
-        width: 50%;
+        width: 100%;
         padding-left: 40px;
 
         li {
@@ -6840,6 +6844,10 @@
         }
       }
     }
+  }
+
+  .courses-case__case-info, .portfolio-case__case-info {
+    padding-bottom: 60px;
   }
   .webinar-list {
     margin-top: 25px;
@@ -10630,7 +10638,13 @@
 }
 
 @media screen and (max-width: 575px) {
-
+  .our-reviews .reviews__item .r-section .detail .btn {
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+  header.header {
+    background: #fff;
+  }
   .our-reviews .nav-slider {
     margin-top: 44px;
   }
