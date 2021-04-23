@@ -1055,22 +1055,8 @@ let allFaqs = [...document.querySelectorAll('.single-faq')];
 allFaqs.forEach((faq) => {
     faq.querySelector('.faq-title').addEventListener('click', () => {
         faq.classList.toggle('open');
-        setTimeout(()=> {
-            $(faq).find('.faq-text').niceScroll({
-                cursorcolor: "#3C8AC9",
-                cursorwidth: "5px",
-                background: "#E0E0E0",
-                cursorborder: "0px solid #f36d2d",
-                cursorborderradius: 0,
-                //boxzoom:false,
-                //touchbehavior:true,
-                //autohidemode:false,
-                cursorfixedheight: 100,
-                //smoothscroll: true,
-                //mousescrollstep: 5,
-                scrollspeed: 50
-            });
-        }, 700)
+
+
 
     })
 });

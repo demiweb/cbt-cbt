@@ -7481,9 +7481,12 @@ section.map-page {
   &.open {
     .faq-text {
       max-height: 540px;
+      margin-top: 34px;
       opacity: 1;
       visibility: visible;
-      margin-top: 0;
+
+      overflow-y: scroll;
+
     }
 
     .cross-mark {
@@ -7544,11 +7547,21 @@ section.map-page {
   width: 100%;
   max-height: 0;
   opacity: 0;
-  padding-top: 34px;
+  margin-top: 0;
   visibility: hidden;
-  margin-top: -34px;
+
   box-sizing: border-box;
   transition: max-height 0.6s ease;
+  &::-webkit-scrollbar {
+    width: 5px; /* ширина для вертикального скролла */
+    height: 5px; /* высота для горизонтального скролла */
+    background-color: rgb(224, 224, 224);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(60, 138, 201);
+    border-radius: 0;
+    box-shadow: none;
+  }
 
   p {
     font-family: $default-font;
