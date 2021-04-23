@@ -4656,6 +4656,16 @@
 }
 
 @media screen and (max-width: 992px) {
+  .license-block__footer .btn, .courses .block:first-child .btn {
+    height: 48px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .courses .block .title-wrap p {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
   .our-reviews .reviews__item .r-section .detail .btn {
     height: 48px;
   }
@@ -7720,10 +7730,29 @@
 }
 
 @media screen and (max-width: 640px) {
+  .price-license__block-custom {
+    &::-webkit-scrollbar {
+      width: 5px; /* ширина для вертикального скролла */
+      height: 0; /* высота для горизонтального скролла */
+      background-color: rgb(224, 224, 224);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(60, 138, 201);
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
   .download-block__left p, .first-steps ol li p, .first-steps ul li p, .text-part p {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  .custom-text-block__left .title-block--no-max.title-block, .custom-text-block__left p {
+    max-width: 100%;
+  }
+  .product-block {
+    padding-bottom: 0;
   }
   .row-place .first-steps ol li {
     &:last-child {
@@ -9018,6 +9047,21 @@
   .comparison-block__head, .download-block__left div {
     font-size: 20px;
     line-height: 25px;
+  }
+  .first-start + .func-list {
+    .case-info__container .case-info__right-side {
+      margin-top: 0;
+    }
+  }
+  .func-list+.first-start--custom {
+    padding-top: 15px;
+  }
+  .download-block__left div {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .first-start .single-video-pack__left {
+    margin-bottom: 27px;
   }
   .comparison-block__head {
     padding-left: 20px;
