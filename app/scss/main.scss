@@ -1964,7 +1964,12 @@ header.header {
       margin-right: 15px;
       margin-left: 15px;
       margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
 
+      .bottom-nav {
+        margin-top: auto;
+      }
       .name {
         min-height: 48px;
       }
@@ -14068,6 +14073,22 @@ span.checkout__title {
         margin-top: 0;
       }
     }
+  }
+}
+.catalog-page .left-sidebar .filter__item .textFieldInput .custom-checkbox+label::before {
+  width: 16px;
+  height: 16px;
+}
+
+.seo-text {
+  &:last-child {
+    margin-top: 0;
+  }
+}
+.calcul-form.cases-question {
+  margin-bottom: 160px;
+  & .seo-text {
+    margin-top: 0;
   }
 }
 //new styles

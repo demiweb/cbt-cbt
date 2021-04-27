@@ -488,7 +488,7 @@ $(function () {
                 prevEl: arrowPrev,
             },
             // Responsive breakpoints
-            /*
+            // /*
               breakpoints: {
                   320: {
                   slidesPerView: 2,
@@ -506,7 +506,7 @@ $(function () {
                       slidesPerView: 'auto',
                       spaceBetween: 20
                   },
-              }*/
+              }
         });
 
     });
