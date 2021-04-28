@@ -4784,7 +4784,7 @@ img {
   }
 
   &.classic-block--webinars {
-    background: url("../img/news/short-patter-right.png") no-repeat top right;
+    //background: url("../img/news/short-patter-right.png") no-repeat top right;
     .top-line {
       display: flex;
       justify-content: space-between;
@@ -5645,6 +5645,8 @@ img {
     padding: 5px 45px;
     flex-shrink: 0;
     height: 64px;
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 
