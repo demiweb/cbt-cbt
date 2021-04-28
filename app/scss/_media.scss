@@ -7782,6 +7782,13 @@
 
 
 @media screen and (min-width: 640px) and (max-width: 922px) {
+  .certificates-prev+.btn, .our-team+.btn {
+    width: 216px;
+    height: 48px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
   .calcul-form.cases-question .get-portfolio .title-block {
     max-width: 400px;
   }
