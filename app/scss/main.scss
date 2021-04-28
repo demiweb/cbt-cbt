@@ -14111,5 +14111,11 @@ span.checkout__title {
     }
   }
 }
+
+.classic-block--promotions {
+  .btn {
+    width: 279px;
+  }
+}
 //new styles
 @import "media"; // Always at the end
