@@ -1008,6 +1008,7 @@ header.header {
           font-size: 15px;
           line-height: 12px;
           margin-left: 12px;
+          margin-top: 2px;
         }
 
         &.planing {
@@ -2078,9 +2079,9 @@ header.header {
       list-style: none;
       position: relative;
       margin-right: 0;
-      &:last-child {
-        padding-right: 0;
-      }
+      //&:last-child {
+      //  padding-right: 0;
+      //}
 
       &::before {
         content: "0" counter(heading) ". ";
@@ -4065,6 +4066,7 @@ ul {
     .custom-checkbox + label {
       margin-bottom: 28px;
       color: $grey-text;
+      align-items: center;
 
       a {
         color: $grey-text;
@@ -4140,7 +4142,7 @@ ul {
 
   .title-block {
     min-width: 100%;
-    margin-bottom: 240px;
+    margin-bottom: 235px;
 
     &::after {
       left: 0;
@@ -5891,8 +5893,8 @@ img {
     font-family: $default-font;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 25px;
     color: #667995;
     margin: 0;
     margin-top: 6px;
@@ -6372,7 +6374,7 @@ img {
 
   .btn {
     min-width: 0;
-    margin: 0 0 25px 0;
+    margin: 0 0 17px 0;
     font-size: 18px;
     line-height: 21px;
     height: 41px;
@@ -6385,6 +6387,11 @@ img {
     //&:nth-child(5) {
     //  margin: 0 43px 25px;
     //}
+    flex-grow: 1;
+    margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
 
     &.active {
@@ -14089,6 +14096,17 @@ span.checkout__title {
   margin-bottom: 160px;
   & .seo-text {
     margin-top: 0;
+  }
+}
+
+.calcul-form.cases-question  {
+  .get-portfolio {
+    .title-block {
+      max-width: 600px;
+      & ~ p {
+        max-width: 520px;
+      }
+    }
   }
 }
 //new styles

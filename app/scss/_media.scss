@@ -2162,10 +2162,13 @@
 
     .name {
       font-size: 14px;
+      margin-bottom: 8px;
     }
 
     .text {
-      display: none;
+      //display: none;
+      font-size: 15px;
+      line-height: 18px;
     }
   }
   .product-detail-page .tabs-product .tabs-content .delivery .product__delivery {
@@ -2554,22 +2557,28 @@
     max-height: 530px;
   }
   .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .img {
-    min-width: 65px;
-    min-height: 65px;
-    height: 65px;
-    width: 65px;
+    min-width: 90px;
+    min-height: 90px;
+    height: 90px;
+    width: 90px;
     margin-right: 20px;
   }
+  .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .price {
+    width: 115px;
+  }
+
   .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .descript {
     margin-right: 0;
     width: 73%;
+    padding-right: 46px;
+    box-sizing: border-box;
 
     .name {
       font-size: 14px;
     }
 
     .text {
-      display: none;
+      //display: none;
     }
   }
   .product-detail-page .tabs-product .tabs-content .delivery .product__delivery {
@@ -3676,8 +3685,8 @@
 
 @media screen and (max-width: 1460px) {
   .our-reviews .reviews__item .r-section .title::before {
-    left: -70px;
-    top: 3px;
+    left: -30px;
+    top: -25px;
   }
   .account-order__right {
     padding-left: 35px;
@@ -4710,10 +4719,13 @@
     background-size: 492px;
   }
   .portfolio-cases__product.portfolio-cases__product--single {
-    background: url("../img/news/short-patter-right.png") no-repeat center right;
+    background: url("../img/news/short-patter-right.png") no-repeat top right;
   }
   .calcul-form.cases-question {
     background: none;
+  }
+  .branch-page.top-slider .swiper-wrapper .container .cart-slider-title {
+    padding-left: 44px;
   }
   .get-portfolio .portfolio-pagination {
     .btn {
@@ -6475,6 +6487,7 @@
   }
   .facancies__filter .btn {
     margin: 0 0 10px 0;
+    margin-right: 20px;
     font-size: 15px;
     line-height: 18px;
     font-weight: normal;
@@ -6891,7 +6904,7 @@
       margin-top: 33px;
 
       ul {
-        margin: 23px 0 0;
+        margin: 0 0 0;
         width: 100%;
         padding-left: 40px;
 
@@ -6947,6 +6960,9 @@
     & .seo-text {
       margin-top: 0;
     }
+  }
+  .commercial {
+    background: none;
   }
 }
 
@@ -7158,6 +7174,8 @@
       h5 {
         font-size: 17px;
         line-height: 20px;
+        margin-bottom: 25px;
+        padding-left: 40px;
       }
 
       ul {
@@ -7285,7 +7303,8 @@
     justify-content: flex-start;
 
     li {
-      width: calc((100% / 5) - 14px);
+      width: auto;
+      flex-grow: 1;
       margin-right: 17px;
 
       &:last-child {
@@ -7331,8 +7350,9 @@
     padding-bottom: 0;
   }
   .webinar__left > p {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
+    margin-top:14px;
   }
   .related-courses {
     .course-speaker {
@@ -7762,7 +7782,28 @@
 
 
 @media screen and (min-width: 640px) and (max-width: 922px) {
-
+  .calcul-form.cases-question .get-portfolio .title-block {
+    max-width: 400px;
+  }
+  .product-detail-page .tabs-product .tabs-content .ov-content-tabs, .product-detail-page .tabs-product .tabs-content .ov-content-tabs, .product-detail-page .tabs-product .tabs-content .ov-content-tabs, .product-detail-page .tabs-product .tabs-content .ov-content-tabs, .product-detail-page .tabs-product .tabs-content .ov-content-tabs {
+    padding-bottom: 20px;
+  }
+  .download-info {
+    padding-bottom: 55px;
+  }
+  .about-result .result-list__item .title {
+    margin-bottom: 15px;
+  }
+  .about-result .result-list__item {
+    margin-bottom: 44px;
+  }
+  .catalog-page .product-wrap {
+    padding-top: 65px;
+  }
+  .our-reviews .reviews__item .r-section .title::before {
+    left: -12.5%;
+    top: 3px;
+  }
   .calcul-form.calcul-form-tablet {
     .form-wrap .container {
       flex-direction: column;
@@ -8017,6 +8058,12 @@
     width: calc(50% - 5px) !important;
 
   }
+  .about-us__content + .num-wrap {
+    .num-plus {
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+  }
 }
 @media screen and (min-width: 640px) {
 
@@ -8026,6 +8073,34 @@
 }
 
 @media screen and (max-width: 640px) {
+  .calcul-form.cases-question .get-portfolio .title-block {
+    max-width: 280px;
+  }
+  .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .descript .text {
+    display: none;
+  }
+  .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .descript {
+    padding-right: 0;
+  }
+  .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .descript .name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .product-detail-page .tabs-product .tabs-content .delivery .product__delivery .img {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    min-height: 65px;
+  }
+  .about-us__content +.num-wrap .num-plus {
+    padding-bottom: 30px;
+  }
+  .case-info__container .case-info__right-side h5 {
+    padding-left: 0;
+  }
+  .top-slider .swiper-slide .container .cart-slider-title.h1 {
+    padding-left: 20px;
+  }
   .calcul-form.cases-question {
     margin-bottom: 46px;
     & .seo-text {
@@ -11107,7 +11182,34 @@
     font-size: 10px;
     line-height: 12px;
     height: 40px;
+    width: auto;
   }
+  .our-reviews.cart-page .reviews__item .r-section .title::before {
+    left: 0;
+    top: -20px;
+  }
+  .product-detail-page .tabs-product .tabs-content .product table th {
+    font-size: 10px;
+    line-height: 12px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .product-detail-page .tabs-product .tabs-content .product {
+    padding-bottom: 20px;
+  }
+  .product-detail-page .tabs-product .tabs-content .ov-content-tabs {
+    padding-bottom: 20px;
+  }
+  .product-detail-page .tabs-product .tabs-content .ov-content-tabs {
+    padding-bottom: 20px;
+  }
+  .top-line .branch-p {
+    margin-bottom: 45px;
+  }
+  .product-detail-page .tabs-product .tabs-content .ov-content-tabs.inform-detailed {
+    padding-bottom: 20px;
+  }
+
   .product-detail-page .tabs-product .tabs-content .ov-content-tabs.inform-detailed,
   .product-detail-page .tabs-product .tabs-content .ov-content-tabs {
     max-height: 475px;
