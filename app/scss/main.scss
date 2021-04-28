@@ -5894,7 +5894,7 @@ img {
   > p {
     font-family: $default-font;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 20px;
     line-height: 25px;
     color: #667995;
@@ -6667,6 +6667,7 @@ img {
     strong {
       color: $black-text;
       margin-bottom: 15px;
+      font-weight: bold;
     }
   }
 
