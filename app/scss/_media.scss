@@ -424,8 +424,8 @@
   }
   .title-block::after,
   .title-block {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 45px;
     max-width: 41%;
   }
   .our-portfolio .portfolio__item {
@@ -2745,7 +2745,7 @@
     background: rgba(102, 121, 149, 0.7);
   }
   .play-btn.videoPoster:after {
-    transform: translate(-38%, -50%);
+    transform: translate(-68%, -75%);
     border-left: 19px solid #fff;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
@@ -3484,6 +3484,7 @@
 }
 
 @media (min-width: 1600px) {
+
   .ru-version {
     .our-special .title-block {
       max-width: 45%;
@@ -3588,6 +3589,14 @@
 
 //new styles
 @media screen and (max-width: 1602px) {
+  section.contacts {
+    margin-top: 36px;
+    height: 100%;
+
+  }
+  .contacts-hint h2 {
+    margin-bottom: 14%;
+  }
   .download-block {
     padding: 60px 6%;
   }
@@ -3684,6 +3693,15 @@
 }
 
 @media screen and (max-width: 1460px) {
+  section.contacts{
+    margin-top: 0;
+  }
+  .contacts-hint p.street{
+    margin-bottom: 10%;
+  }
+  .contacts-hint ul {
+    margin-bottom: 10%;
+  }
   .our-reviews .reviews__item .r-section .title::before {
     left: -30px;
     top: -25px;
@@ -4670,6 +4688,46 @@
 }
 
 @media screen and (max-width: 992px) {
+  .account-block>form input[type=text] {
+    height: 48px;
+    font-size: 15px;
+    line-height: 18px;
+    &::placeholder {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  .comments-list>button.btn {
+    height: 48px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .classic-block.classic-block--search-result {
+    background-size: 300px;
+  }
+  .courses__list>a.btn {
+    width: 236px;
+    font-size: 17px;
+    line-height: 20px;
+    height: 48px;
+  }
+  .speaker-info a.btn {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .sitemap-links {
+    margin-top: 72px;
+  }
+  .faq-container {
+    background: none;
+  }
+  .carrier-about.carrier-about-bg {
+    background-size: 400px;
+  }
+  .webinar-container .webinar-list .closest-webinar .webinar__right .form-wrap>h5 {
+    font-size: 25px;
+    line-height: 30px;
+  }
   .footer {
     background: url('../img/world-big-white.png');
     background-repeat: no-repeat;
@@ -5738,7 +5796,7 @@
     > span {
       font-size: 17px;
       line-height: 20px;
-      max-width: 500px;
+      max-width: 502px;
     }
 
     > form {
@@ -5936,8 +5994,6 @@
   .btn.control-visibility-tags {
     margin-right: 11px;
     margin-left: 0;
-    width: 100%;
-    margin-top: 6px;
   }
   .list-additive-tags {
     margin-top: 40px;
@@ -6365,6 +6421,10 @@
 
       .btn {
         width: calc(50% - 15px);
+        &:last-child {
+          max-width: 236px;
+          flex-grow: 1;
+        }
       }
 
       button.btn + a.btn {
@@ -6438,6 +6498,9 @@
   }
   .vacancy-left a.btn {
     margin-top: 60px;
+    width: 236px;
+    font-size: 17px;
+    line-height: 20px;
   }
   .vacancy-right .calcul-form .form-wrap button.btn {
     color: $white;
@@ -6970,6 +7033,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .paper-right .calcul-form .form-wrap .btn {
+    font-size: 17px;
+    line-height: 20px;
+  }
   .our-reviews .nav-slider {
     margin-top: 60px;
   }
@@ -7086,8 +7153,8 @@
     }
   }
   section.contacts {
-    margin-top: 43px;
-    height: calc(100% - 43px);
+    margin-top: 0;
+    height: 100%;
   }
   .promotion__right .calcul-form .form-wrap h5 {
     font-size: 20px;
@@ -7364,7 +7431,7 @@
 
     .courses__list {
       > a.btn {
-        width: 100%;
+        width: 236px;
       }
     }
   }
@@ -7785,6 +7852,61 @@
 
 
 @media screen and (min-width: 640px) and (max-width: 922px) {
+  .account-block>form input[type=text] {
+    height: 48px;
+    font-size: 15px;
+    line-height: 18px;
+    &::placeholder {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  .form-left-comment .calcul-form .form-wrap .input-wrap {
+    flex-direction: row;
+    > .textFieldInput {
+      width: calc(50% - 10px);
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .form-left-comment .calcul-form .form-wrap .input-wrap .textFieldInput button.btn {
+    width: 236px;
+  }
+  .classic-block--promotions .webinar-container .promotion-container p {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .calcul-form.cases-question .form-wrap .title-block.title-block--question~p {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .classic-block--promotions .webinar-container .promotion-container {
+    ul {
+      li  {
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+    p.date {
+      font-size: 17px;
+      line-height: 21px;
+    }
+  }
+  .test-drive__content.calcul-form .form-wrap .container {
+    flex-direction: column;
+  }
+  .test-drive__content.calcul-form .form-wrap .input-wrap {
+    flex-direction: row;
+    .textFieldInput {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
   .certificates-prev+.btn, .our-team+.btn {
     width: 216px;
     height: 48px;
@@ -8083,6 +8205,45 @@
 }
 
 @media screen and (max-width: 640px) {
+  .paper-left  {
+    p, span {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+  .play-btn.videoPoster:after {
+    transform: translate(-38%, -45%);
+    border-left: 12px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  .calcul-form.cases-question .form-wrap .title-block.title-block--question~p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 30px;
+  }
+  .classic-block--promotions .webinar-container .promotion-container {
+    ul {
+      li  {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    p, p.date {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+  .classic-block.classic-block--search-resul {
+    background: none;
+  }
+  .sitemap-links {
+    margin-top: 65px;
+  }
+  .webinar-container .webinar-list .closest-webinar .webinar__right .form-wrap>h5 {
+    font-size: 20px;
+    line-height: 23px;
+  }
   .calcul-form.cases-question .get-portfolio .title-block {
     max-width: 280px;
   }
@@ -8170,10 +8331,13 @@
     background: none;
   }
   .classic-block.classic-block--search-result {
-    padding-top: 30px;
+    padding-top: 40px;
     .breadcrumb {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
+  }
+  .blog-header__left {
+    margin-top: 0;
   }
   .single-paper .text a.btn {
     font-size: 17px;
@@ -9406,6 +9570,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .title-block.title-block--question::after {
+    font-size: 30px;
+    line-height: 35px;
+  }
   header.header {
     & + .content {
       padding-top: 53px;
@@ -9898,7 +10066,7 @@
       }
 
       .account-block {
-        margin-top: 60px;
+        margin-top: 45px;
 
         > a {
           width: 100%;
@@ -10238,6 +10406,7 @@
       width: calc(100% + 30px);
       margin-left: -15px;
       margin-right: -15px;
+      max-width: none;
     }
 
     .video-preview {
@@ -10480,6 +10649,7 @@
 
       button.btn {
         max-width: none;
+        font-weight: 500;
       }
     }
   }
@@ -11457,6 +11627,8 @@
   }
   .btn.control-visibility-tags {
     margin-right: 6px;
+    width: 100%;
+    //margin-top: 6px;
   }
   .half-block > div {
     flex-wrap: wrap;

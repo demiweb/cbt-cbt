@@ -586,41 +586,41 @@ $(function () {
         //mousescrollstep: 5,
         scrollspeed: 50
     });
-    $(document).ready(()=> {
-        setTimeout(() => {
-            $(".items-same-tags__right").niceScroll({
-                cursorcolor: "#3C8AC9",
-                cursorwidth: "5px",
-                background: "#E0E0E0",
-                cursorborder: "0px solid #f36d2d",
-                cursorborderradius: 0,
-                //boxzoom:false,
-                //touchbehavior:true,
-                //autohidemode:false,
-                cursorfixedheight: 0,
-                //smoothscroll: true,
-                //mousescrollstep: 5,
-                scrollspeed: 50
-            });
-        }, 500)
-
-    });
-    $('.classic-block').change(() => {
-        $(".items-same-tags__right").niceScroll({
-            cursorcolor: "#3C8AC9",
-            cursorwidth: "5px",
-            background: "#E0E0E0",
-            cursorborder: "0px solid #f36d2d",
-            cursorborderradius: 0,
-            //boxzoom:false,
-            //touchbehavior:true,
-            //autohidemode:false,
-            cursorfixedheight: 0,
-            //smoothscroll: true,
-            //mousescrollstep: 5,
-            scrollspeed: 50
-        });
-    })
+    // $(document).ready(()=> {
+    //     setTimeout(() => {
+    //         $(".items-same-tags__right").niceScroll({
+    //             cursorcolor: "#3C8AC9",
+    //             cursorwidth: "5px",
+    //             background: "#E0E0E0",
+    //             cursorborder: "0px solid #f36d2d",
+    //             cursorborderradius: 0,
+    //             //boxzoom:false,
+    //             //touchbehavior:true,
+    //             //autohidemode:false,
+    //             cursorfixedheight: 0,
+    //             //smoothscroll: true,
+    //             //mousescrollstep: 5,
+    //             scrollspeed: 50
+    //         });
+    //     }, 500)
+    //
+    // });
+    // $('.classic-block').change(() => {
+    //     $(".items-same-tags__right").niceScroll({
+    //         cursorcolor: "#3C8AC9",
+    //         cursorwidth: "5px",
+    //         background: "#E0E0E0",
+    //         cursorborder: "0px solid #f36d2d",
+    //         cursorborderradius: 0,
+    //         //boxzoom:false,
+    //         //touchbehavior:true,
+    //         //autohidemode:false,
+    //         cursorfixedheight: 0,
+    //         //smoothscroll: true,
+    //         //mousescrollstep: 5,
+    //         scrollspeed: 50
+    //     });
+    // })
 
 
     $(".tabs-content .ov-content-tabs").niceScroll({

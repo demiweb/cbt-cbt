@@ -497,6 +497,7 @@ h1, .h1 {
   color: $black-text;
   font-weight: bold;
   max-width: 39%;
+  display: block;
 
   &::after {
     content: '.';
@@ -504,7 +505,7 @@ h1, .h1 {
     line-height: 70px;
     color: $accent;
     position: relative;
-    left: 0;
+    left: -10px;
   }
 }
 
@@ -5997,7 +5998,8 @@ img {
       font-size: 30px;
       line-height: 35px;
       color: $accent;
-      margin: 70px 0 0;
+      //margin: 70px 0 0;
+      margin: 0;
     }
 
     .textFieldInput input[type=text] {
@@ -6124,6 +6126,8 @@ img {
         justify-content: flex-start;
         .form-wrap > h5 {
           margin-top: 0;
+          font-size: 22px;
+          line-height: 26px;
         }
       }
     }
@@ -6154,7 +6158,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 108px;
+    margin-bottom: 115px;
 
     &::before {
       content: '';
@@ -7216,7 +7220,12 @@ img {
       width: 100%;
       padding-right: 160px;
       box-sizing: content-box;
-
+      ul {
+        li {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
       p.date {
         font-weight: bold;
         font-size: 22px;
@@ -7226,6 +7235,8 @@ img {
 
       p:not(.date) {
         margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 25px;
       }
     }
   }
@@ -7310,7 +7321,7 @@ section.map-page {
     font-size: 40px;
     line-height: 47px;
     color: $white;
-    margin-bottom: 30px;
+    margin-bottom: 18%;
   }
 
   p {
@@ -7327,7 +7338,7 @@ section.map-page {
     }
 
     &.street {
-      margin-bottom: 20px;
+      margin-bottom: 15%;
     }
 
     &.email {
@@ -7362,7 +7373,7 @@ section.map-page {
     padding: 0;
     list-style: none;
     max-width: 370px;
-    margin-bottom: 25px;
+    margin-bottom: 12%;
 
     li {
       width: calc(50% - 10px);
@@ -7437,9 +7448,9 @@ section.map-page {
 
     li {
       font-family: $default-font;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 300;
-      line-height: 21px;
+      line-height: 26px;
       color: $grey-text;
       margin-bottom: 24px;
       padding-left: 28px;
@@ -7807,6 +7818,7 @@ section.map-page {
     margin-bottom: 23px;
     display: inline-block;
     transition: all 0.4s ease;
+    text-decoration: underline;
   }
 
   p {
@@ -7939,11 +7951,12 @@ section.map-page {
 .blog-header__right {
   width: 100%;
   max-width: 500px;
-  padding-left: 60px;
+  padding-left: 14px;
 
   .form-wrap {
     padding-top: 0;
     background: none;
+    padding-bottom: 30px;
 
     > h5 {
       font-family: $default-font;
@@ -8111,11 +8124,21 @@ section.map-page {
   width: 50%;
   height: 100%;
   max-height: 460px;
-  overflow: hidden;
+  overflow: auto;
 
   .news-list__item {
     padding-bottom: 20px;
     border-bottom: 1px solid #D1D1D1;
+  }
+  &::-webkit-scrollbar {
+    width: 5px; /* ширина для вертикального скролла */
+    height: 5px; /* высота для горизонтального скролла */
+    background-color: rgb(224, 224, 224);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(60, 138, 201);
+    border-radius: 0;
+    box-shadow: none;
   }
 }
 
@@ -8910,7 +8933,7 @@ section.map-page {
 
 .title-paper {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 44px;
 
   h1 {
     font-family: $default-font;
@@ -8967,7 +8990,7 @@ section.map-page {
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
-    color: $black-text;
+    color: #667995;
     margin-bottom: 25px;
   }
 
@@ -9092,7 +9115,7 @@ section.map-page {
   > span {
     font-family: $default-font;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 22px;
     line-height: 26px;
     color: #667995;
@@ -9232,6 +9255,7 @@ section.map-page {
       color: $grey-text;
       height: 64px;
       width: 100%;
+      background: $white;
 
       &::placeholder {
         font-style: normal;
@@ -9270,6 +9294,7 @@ section.map-page {
         font-weight: normal;
         font-size: 18px;
         line-height: 21px;
+        align-items: center;
         color: $grey-text;
       }
     }
