@@ -6134,9 +6134,11 @@ img {
   }
 
 }
-
+.right-menu-related__container {
+  margin-top: 273px;
+}
 .webinar-links {
-  width: 160px;
+  width: 130px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -9101,6 +9103,7 @@ section.map-page {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-grow: 1;
   justify-content: flex-start;
 
   > a {
@@ -9121,6 +9124,7 @@ section.map-page {
     color: #667995;
     max-width: 830px;
     display: inline-block;
+    margin-bottom: 10px;
 
     strong {
       font-weight: bold;
@@ -9409,7 +9413,7 @@ section.map-page {
 }
 
 .classic-block.classic-block--account {
-  background: url('../img/product/pattern.png') no-repeat right top;
+  background: url('../img/news/pat-12221.png') no-repeat right top;
   position: relative;
   align-items: stretch;
   display: flex;
@@ -9470,6 +9474,7 @@ section.map-page {
 
 .order-status {
   width: 20%;
+  //text-align: center;
 }
 
 .order-amount {
@@ -9556,6 +9561,8 @@ section.map-page {
 
 .account-order__left {
   width: 37%;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -9570,9 +9577,9 @@ section.map-page {
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   background: $white;
-  padding: 35px 25px;
+  padding: 35px 25px 35px 32px;
   box-sizing: border-box;
-  margin-top: 45px;
+  margin-top: auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -10330,6 +10337,7 @@ span.checkout__title {
   border: 1px solid #C6C6C6;
   box-sizing: border-box;
   border-radius: 3px;
+  background: white;
   width: 100%;
   margin-bottom: 40px;
   padding: 40px 30px 24px;
@@ -10961,7 +10969,7 @@ span.checkout__title {
 
 .checkout__product {
   padding: 25px 0;
-  border-top: 1px solid #d1d1d1;
+  //border-top: 1px solid #d1d1d1;
 }
 
 .services {
@@ -11220,6 +11228,7 @@ span.checkout__title {
     color: $grey-text;
     border-color: $grey-text;
     background: $white;
+    padding: 0;
 
     &:hover {
       background: $grey-text;
@@ -11293,7 +11302,8 @@ span.checkout__title {
     }
 
     p + span {
-      padding-top: 6px;
+      padding-top: 20px;
+      margin-top: 15px;
 
       border-top: 0.5px solid $grey-text;
     }
@@ -11487,7 +11497,7 @@ span.checkout__title {
       font-size: 16px;
       line-height: 19px;
       color: $grey-text;
-      padding: 23px 0 0 23px;
+      padding: 23px 20px 10px 23px;
 
       &::placeholder {
         font-size: 16px;
@@ -11507,7 +11517,8 @@ span.checkout__title {
 
 .calc-service__head {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
+
 
   span {
     font-family: $default-font;
@@ -11532,6 +11543,14 @@ span.checkout__title {
     font-size: 22px;
     line-height: 26px;
     color: $grey-text;
+    small {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FF664E;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -12085,6 +12104,9 @@ span.checkout__title {
 
   .video-wrapper {
     width: 100%;
+    &.video-preview {
+      height: 447px !important;
+    }
   }
 
 }
@@ -12151,7 +12173,7 @@ span.checkout__title {
 
 .title-block.title-block--no-max {
   &::after {
-    left: 0;
+    left: -4px;
   }
 }
 
@@ -12273,7 +12295,17 @@ span.checkout__title {
 
 .first-start.first-start--custom {
   background: url('../img/portfolio/patter-left.png') no-repeat left center;
-
+  .top-line {
+    p {
+      font-family: $default-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      color: #667995;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .first-steps.first-steps--custom {
@@ -14124,6 +14156,9 @@ span.checkout__title {
   margin-bottom: 160px;
   & .seo-text {
     margin-top: 0;
+  }
+  & + .first-start {
+    padding-top: 0;
   }
 }
 
