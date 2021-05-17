@@ -504,10 +504,11 @@ h1, .h1 {
     font-size: 60px;
     line-height: 70px;
     color: $accent;
-    position: relative;
-    left: -10px;
+    //position: relative;
+    //left: -10px;
   }
 }
+
 
 .btn {
   height: 64px;
@@ -2915,7 +2916,7 @@ ul {
   &.cart-page {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F2 23.96%);
     margin-bottom: 0;
-    height: 33%;
+    height: 15%;
   }
 }
 
@@ -4362,8 +4363,8 @@ img {
         font-size: 60px;
         line-height: 70px;
         color: #3c8ac9;
-        position: relative;
-        left: -10px;
+        //position: relative;
+        //left: -10px;
       }
     }
   }
@@ -12169,6 +12170,9 @@ span.checkout__title {
   & + .calcul-form {
     background: none;
   }
+  &--planet {
+    background: url('../img/news/pat-big-right.png') no-repeat right center;
+  }
 }
 
 .title-block.title-block--no-max {
@@ -12236,6 +12240,9 @@ span.checkout__title {
         line-height: 26px;
         margin-bottom: 30px;
         margin-top: 20px;
+        strong {
+          font-weight: bold;
+        }
       }
 
       a.btn {
@@ -12501,7 +12508,23 @@ span.checkout__title {
 
   & + .first-start--custom {
     background: none;
+    padding-top: 40px;
+    .first-steps ul li  {
+
+      span {
+        font-size: 30px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 17px;
+        max-width: 318px;
+      }
+
+    }
   }
+  & + .first-sta
 
 
   .case-info__container {
