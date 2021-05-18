@@ -4352,6 +4352,7 @@ img {
         color: $black-text;
         max-width: 770px;
         box-sizing: border-box;
+        display: inline-flex;
 
         &::before {
           content: none;
@@ -4999,6 +5000,9 @@ img {
       font-family: $default-font;
       font-weight: 300;
       margin-bottom: 45px;
+      strong {
+        font-weight: bold;
+      }
     }
   }
 
@@ -12355,7 +12359,23 @@ span.checkout__title {
   justify-content: flex-start;
   position: relative;
 }
+.tabs-content {
+  .product {
+    table {
+       tr {
+        border-bottom: 1px solid #D1D1D1;
 
+      }
+    }
+  }
+}
+.product-detail-page.no-bg {
+  & + .first-start {
+    background: none;
+  }
+}
+.product-detail-page .tabs-product .tabs-content .product .bold {
+}
 .custom-text-block__container {
   width: 100%;
   display: flex;
@@ -12372,7 +12392,7 @@ span.checkout__title {
     color: $grey-text;
     margin-bottom: 0;
     margin-top: 40px;
-    max-width: 650px;
+    max-width: 42.2%;
     width: 100%;
 
     strong {
@@ -12505,7 +12525,9 @@ span.checkout__title {
   padding: 140px 0;
   width: 100%;
   background: url("../img/portfolio/left-big.png") no-repeat left center;
-
+  & + .text-info + .text-info {
+    margin-top: 150px;
+  }
   & + .first-start--custom {
     background: none;
     padding-top: 40px;
@@ -12547,7 +12569,7 @@ span.checkout__title {
     }
 
     .case-info__right-side {
-      max-width: 880px;
+      max-width: 930px;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -12573,8 +12595,10 @@ span.checkout__title {
   }
 
   ol {
+    justify-content: space-between;
     li {
       padding-left: 0 !important;
+      width: calc((100% / 3) - 6%);
     }
 
   }
@@ -12587,6 +12611,9 @@ span.checkout__title {
 
   & + .first-start {
     padding-top: 60px;
+    .first-start__left {
+      align-items: flex-start;
+    }
   }
 
   .top-line {
@@ -13147,7 +13174,7 @@ span.checkout__title {
     margin-bottom: 12px;
     font-family: $default-font;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 15px;
     line-height: 18px;
     color: $grey-text;
@@ -13193,7 +13220,7 @@ span.checkout__title {
   width: 100%;
   margin: 0;
   margin-bottom: 60px;
-  margin-top: 50px;
+  margin-top: 65px;
 
 
   .custom-text-block {
@@ -13268,6 +13295,9 @@ span.checkout__title {
     max-width: none;
     width: 100%;
     display: inline-block;
+    &:first-child {
+      margin-top: 0;
+    }
 
     em {
       font-style: normal;
@@ -13324,7 +13354,7 @@ span.checkout__title {
       position: relative;
       padding-left: 26px;
       box-sizing: border-box;
-      margin-bottom: 16px;
+      margin-bottom: 25px;
       li {
         color: #667995;
         font-weight: 300;
@@ -13360,7 +13390,7 @@ span.checkout__title {
     list-style: decimal;
     margin: 6px 0;
     padding-left: 0;
-    margin-top: 30px;
+    margin-top: 22px;
 
     li {
       font-size: 18px;
@@ -13434,7 +13464,11 @@ span.checkout__title {
     margin: 0;
     padding: 0;
     list-style: none;
-
+    ol.decimal {
+      li {
+        margin-bottom: 4px;
+      }
+    }
     li {
       font-family: $default-font;
       font-style: normal;
@@ -13445,7 +13479,7 @@ span.checkout__title {
       position: relative;
       padding-left: 26px;
       box-sizing: border-box;
-      margin-bottom: 16px;
+      margin-bottom: 22px;
 
       em {
         font-style: normal;
@@ -13573,6 +13607,9 @@ span.checkout__title {
     width: 100%;
     height: auto;
     object-fit: contain;
+    &:first-child {
+      margin-top: 30px;
+    }
   }
 
   > div:not(.swiper-container) {
@@ -13592,6 +13629,7 @@ span.checkout__title {
 
       li {
         color: $grey-text;
+        font-weight: 300;
 
         &:before {
           background: url("../img/portfolio/grey-check.svg") no-repeat center;
@@ -14195,11 +14233,22 @@ span.checkout__title {
     }
   }
 }
+.calcul-form.help-service {
+  background: url('../img/news/pat-left-mini.png') no-repeat left top;
 
+}
+
+.classic-block.classic-block--service {
+  background: none;
+}
 .classic-block--promotions {
   .btn {
     width: 279px;
   }
+}
+
+.first-start--med.first-start {
+  background: url("../img/news/pat-big-right.png") no-repeat right center;
 }
 //new styles
 @import "media"; // Always at the end
