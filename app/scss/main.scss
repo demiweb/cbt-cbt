@@ -2518,7 +2518,17 @@ img {
   .container {
     height: 320px;
     padding-top: 0px;
-
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 5px; /* ширина для вертикального скролла */
+      height: 5px; /* высота для горизонтального скролла */
+      background-color: rgb(224, 224, 224);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(60, 138, 201);
+      border-radius: 0;
+      box-shadow: none;
+    }
 
     h1 {
       font-size: 40px;
@@ -2971,10 +2981,10 @@ ul {
         border-radius: 3px;
         text-align: center;
         min-width: 69px;
-        padding: 5px 5px;
+        padding: 5px 48px;
         font-weight: 500;
-        font-size: 13px;
-        line-height: 15px;
+        font-size: 22px;
+        line-height: 25px;
         color: #fff;
         margin-right: 13px;
 
@@ -4350,9 +4360,9 @@ img {
     .container {
       .cart-slider-title {
         color: $black-text;
-        max-width: 770px;
+        max-width: 827px;
         box-sizing: border-box;
-        display: inline-flex;
+        display: inline-block;
 
         &::before {
           content: none;
@@ -12177,6 +12187,9 @@ span.checkout__title {
   &--planet {
     background: url('../img/news/pat-big-right.png') no-repeat right center;
   }
+  &--planet2 {
+    background: url('../img/news/pat-big-right.png') no-repeat right 30%;
+  }
 }
 
 .title-block.title-block--no-max {
@@ -13358,6 +13371,11 @@ span.checkout__title {
       li {
         color: #667995;
         font-weight: 300;
+        &::before {
+          width: 11px;
+          height: 11px;
+          top: 9px;
+        }
       }
       &.noBefore {
         li {
@@ -13420,8 +13438,14 @@ span.checkout__title {
 
   &.text-apart--grey {
     ol {
+      &.bold {
+        > li {
+          font-weight: 700;
+        }
+      }
       li {
         color: $grey-text;
+        font-weight: 300;
 
         &:before {
           background: url("../img/portfolio/grey-check.svg") no-repeat center;
@@ -13435,6 +13459,7 @@ span.checkout__title {
       ol {
         > li {
           color: $accent;
+          font-weight: 700;
 
           &::before {
             background: url('../img/portfolio/check-blue.svg') no-repeat center;
@@ -13490,7 +13515,7 @@ span.checkout__title {
       &::before {
         content: '';
         left: 0;
-        top: 5px;
+        top: 7px;
         position: absolute;
         display: inline-block;
         width: 11px;
@@ -13558,7 +13583,9 @@ span.checkout__title {
 
   &.text-apart--scrolled {
     max-height: 845px;
-
+    .half-block {
+      padding-right: 50px;
+    }
     span {
       font-weight: bold;
       font-family: $default-font;
@@ -13619,25 +13646,28 @@ span.checkout__title {
     margin-top: 30px;
     justify-content: space-between;
 
-    ul {
-      width: 50%;
-      margin-top: 0;
-    }
+    &:not(.blue-list) {
+      ul {
+        width: 50%;
+        margin-top: 0;
+      }
 
-    ol {
-      margin-top: 0;
+      ol {
+        margin-top: 0;
 
-      li {
-        color: $grey-text;
-        font-weight: 300;
+        li {
+          color: $grey-text;
+          font-weight: 300;
 
-        &:before {
-          background: url("../img/portfolio/grey-check.svg") no-repeat center;
-          background-size: contain;
+          &:before {
+            background: url("../img/portfolio/grey-check.svg") no-repeat center;
+            background-size: contain;
 
+          }
         }
       }
     }
+
 
   }
 
@@ -13673,6 +13703,11 @@ span.checkout__title {
 
 }
 
+.text-info.text-info__bg-big-right {
+  background: url('../img/news/pat-big-right.png') no-repeat right top;
+  background-size: 665px;
+}
+
 .big-block {
   width: 100%;
   max-width: 941px;
@@ -13696,6 +13731,7 @@ span.checkout__title {
   align-items: flex-start;
   justify-content: flex-start;
   border: 1px solid $grey-text;
+  margin-bottom: 60px;
 
   tbody {
     width: 100%;
@@ -13836,6 +13872,7 @@ span.checkout__title {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 70px;
 }
 
 .full-block__line {
@@ -14247,8 +14284,41 @@ span.checkout__title {
   }
 }
 
-.first-start--med.first-start {
+.product-detail-page.no-bg + .first-start--med.first-start {
   background: url("../img/news/pat-big-right.png") no-repeat right center;
 }
+
+
+
+.text-apart p:first-child strong {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.text-apart .top-line.no-margin {
+  margin-top: 0;
+}
+
+.text-info + .first-start {
+  padding-top: 0;
+}
+
+.first-start.no-bg {
+  background: none !important;
+}
+.video-preview .video-cover .logo img {
+  margin-top: 0;
+}
+.video-preview .video-cover .speaker .photo img {
+  margin-top: 0;
+}
+.video-preview .video-cover .name {
+  overflow: visible;
+}
+
+.text-info.have-bg {
+  background: url("../img/news/pat-big-right.png") no-repeat right center;
+}
+
 //new styles
 @import "media"; // Always at the end
